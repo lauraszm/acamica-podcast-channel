@@ -1,0 +1,44 @@
+// @mixin blue-sections {
+//     background-color: blue;
+//     // width: 100vw;
+//     transform: skew(0deg, -10deg);
+// }
+
+// @mixin contraskew {
+//     transform: skew(0deg, 10deg);
+
+// }
+
+@import 'presentacion';
+@import 'episodios';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0 0.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+// .episodios {
+//     @include blue-sections;
+//     width: 500px;
+//     height: 500px;
+// }
+
+// .contenedor_episodios {
+//     @include contraskew;
+// }
+
+// .novedades {
+//     @include blue-sections;
+// }
+
+// .contenedor_novedades {
+//     @include contraskew;
+//     width: 500px;
+//     height: 500px;
+// }
