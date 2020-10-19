@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEQ,iCAAG;EACC,WAAW,EAAE,WAAW;EACxB,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,OAAO;EACd,cAAc,EAAE,CAAC;EACjB,WAAW,EAAE,IAAI",
-"sources": ["presentacion.scss"],
-"names": [],
-"file": "presentacion.css"
-}

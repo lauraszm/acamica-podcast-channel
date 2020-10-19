@@ -1,0 +1,32 @@
+.footer {
+    height: 20vh;
+    padding-right: 14.4%;
+    padding-left: 14.4%;
+    box-sizing: border-box;
+
+    .copyright {  
+        p {
+            box-sizing: border-box;
+            font-family: IBM Plex Mono;
+            font-size: 0.875em;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 1.2em;
+            padding-top: 5vh;
+            padding-bottom: 4vh;
+        }
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        // align-items: center;
+
+        i {
+            align-self: center;
+            size: 0.875em;
+        }
+    }
+    
+}

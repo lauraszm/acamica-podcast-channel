@@ -1,0 +1,85 @@
+.episodios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    transform: skew(0deg, -8deg);
+    margin-top: 12vh;
+    width: 100vw;
+    height: auto;
+    padding-bottom: 20%;
+    box-sizing: border-box;
+
+    .episodios2{
+        transform: skew(0deg, 8deg);
+    
+        h2 {
+            font-family: IBM Plex Sans;
+            font-weight: 300;
+            font-size: 36px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            line-height: 42px;
+            padding-top: 10%;
+            margin-left: 5%;
+        }
+
+        .contenedor_episodios {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 10%;
+        
+            .podcast {
+
+                iframe {
+                    display: block;
+                    box-sizing: border-box;
+                    width: 100vw;
+                    height: 232px;
+                    margin-top: 5%;
+                }
+                
+            }
+        }   
+    }
+}
+
+@media screen and (min-width:768px){
+    .episodios {
+        .episodios2 {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                font-family: IBM Plex Sans;
+                font-size: 3rem;
+                color: #FFFFFF;
+                letter-spacing: 0;
+                padding-left: 10vh;
+            }
+
+            .contenedor_episodios {
+                //grid???
+
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: space-around;
+
+                .podcast {
+                    box-sizing: border-box;
+                    align-items: center;
+
+                    iframe {
+                        width: 40.9vw;
+                        height: 60vh;
+                        // padding: 6.9%;
+                    }
+                   
+                    
+                }
+            }
+        }
+    }
+}

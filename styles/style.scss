@@ -1,0 +1,16 @@
+@import 'header';
+@import 'presentacion';
+@import 'episodios';
+@import 'dondevenimos';
+@import 'novedades';
+@import 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}

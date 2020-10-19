@@ -3,84 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    <!--
-        logo bd
-        navbar
-        section1: h1, explicacion, conoce mas
-        section2: episodios. skew
-        section3: de donde venimos / invitados estelares + fotos / algunos de nuestros temas. skew
-        section4: queres ultimas novedades / escucha los episodios
-        footer
-
-    -->
-
+   
     <header>
-        <img src="./landingUI_desktop_mobile_kit/assets/logo.svg" alt="logo" class="logo">
-        <!--menu hamburguesa-->
-        <nav class="menu">
-            <ul>
-                <li>episodios</li>
-                <li>nosotros</li>
-                <li>entrevistas</li>
-                <li>tópicos</li>
-            </ul>
-        </nav>
+        <div class="header">
+            <img src="./landingUI_desktop_mobile_kit/assets/logo.svg" alt="logo" class="logo">
+            
+            <nav class="menu">
+                <!--menu hamburguesa-->
+                <input type="checkbox" id="test">
+                <label for="test" class="open"> <i class="fa fa-bars"></i> </label>
+                <label for="test" class="close"> <i class="fa fa-times"></i> <i></i> </label>
+                <ul>
+                    <a href="#episodios"><li>episodios</li></a>
+                    <a href="#nosotros"><li>nosotros</li></a>
+                    <a href="#entrevistas"><li>entrevistas</li></a>
+                    <a href="#topicos"><li>tópicos</li></a>
+                </ul>
+            </nav>
+        </div>
     </header>
 
    
     <main>
 
-        <section class="presentacion">
+        <section class="presentacion" id="home">
             <div class="contenedor_pres">
-                <h1>Hello <span class="tachado">world</span> pale blue dot</h1>
-                <p class="descripcion">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
+                <h1>Hello <span class="tachado">world</span> pale blue dot<span class="punto">.</span></h1>
+                <p class="descripcion">Un podcast que explora el mundo de la programación<span class="tecnologia"> y la tecnología</span>. Nuevos episodios, todos los jueves cada 15 días.</p>
                 <button class="conoce-mas">Conocé más</button>
             </div>
         </section>
 
-        <section class="episodios">
+        <section class="episodios" id="episodios">
             <div class="episodios2">
                 <h2>Episodios</h2>
                 <div class="contenedor_episodios">
                     <div class="podcast">
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>                    
                     </div>
                     <div class="podcast">
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     </div>
                     <div class="podcast">
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     </div>
                     <div class="podcast">
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/5mddqHiI96V0ZMdMidn3WW" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>                    
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="donde-venimos">
+        <section class="donde-venimos" id="nosotros">
         
             <div class="contenedor_donde">
-                <!--aca va el telefono-->
-                <h2>De dónde venimos</h2>
-                <!--copiar texto-->
-                <p class="venimos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita totam veritatis non nihil reiciendis nulla beatae repudiandae corrupti ipsa, omnis minus doloribus cumque soluta. Nesciunt, laboriosam. Corporis illum facilis et expedita voluptates adipisci harum, voluptatum praesentium accusamus laborum odit ullam reiciendis deserunt dolorum dolor similique. Repellat a ad iste quo mollitia, molestiae voluptates ipsa ab eligendi sit accusamus odio, quibusdam dolorum quae, ex corporis soluta inventore? Consequuntur excepturi eum nihil nulla, odit nesciunt. Totam, quasi animi libero vero ratione aspernatur debitis similique blanditiis, voluptate porro nam eveniet neque quaerat molestiae quo facere dolorum. Repellendus porro ex, accusamus quia repudiandae iste. Harum saepe illum quisquam doloremque nesciunt quidem mollitia adipisci. Corrupti accusamus ullam soluta exercitationem eaque aspernatur dignissimos, sint quos sunt delectus nostrum blanditiis, cupiditate, ad a sapiente libero voluptatibus voluptatum pariatur! Deserunt ab vero dolorem itaque quos eligendi rem sapiente neque, reprehenderit nemo! Corporis perspiciatis, error saepe laboriosam voluptas rem.</p>
-                <h2>Invitadas/os estelares</h2>
-                <!--fotos-->
-                <h2>Algunos de nuestros temas</h2>
-                <!--iconos-->
+                <div class="phone">
+                    <img src="./images/phone.png" alt="phone">
+                </div>
+                <div class="donde">
+                    <h2>De dónde venimos</h2>
+                    <p class="venimos">
+                        Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. 
+                    </p>
+                    <p class="venimos">    
+                        Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.                    
+                    </p>
+                </div>
+
+                <div class="contenedor-invitadas" id="entrevistas">
+                    <h2>Invitadas/os estelares</h2>
+                    <div class="invitadas">
+                        <img src="./images/grace-hopper.png" alt="Grace Hopper">
+                        <img src="./images/Katie-Bouman.png" alt="Katie Bouman">
+                        <img src="./images/Margaret_Hamilton.png" alt="Margaret Hamilton">
+                        <img src="./images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="ERA Univac">
+                        <img src="./images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Eniac">
+                        <img src="./images/susan-kare.png" alt="Susan Kare">
+                    </div>
+                </div>
+               
+                <div class="contenedor-temas" id="topicos">
+                    <h2>Algunos de nuestros temas</h2>
+
+                    <div class="temas">
+                        
+                            <div class="temas1">
+                                <img src="./images/icon1.svg" alt="Remoto">
+                                <p class="epigrafe">Trabajo remoto</p>
+                            </div>
+
+                            <div class="temas2">
+                                <img src="./images/icon2.svg" alt="Repensando">
+                                <p class="epigrafe">Repensando la programación</p>
+                            </div>
+
+                            <div class="temas3">
+                                <img src="./images/icon3.svg" alt="Bases">
+                                <p class="epigrafe">Bases del código</p>
+                            </div>
+                        
+                            <div class="temas4">
+                                <img src="./images/icon4.svg" alt="Seguridad">
+                                <p class="epigrafe">Seguridad informática</p>
+                        </div>    
+                        
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="novedades">
-            <div class="contenedor_novedades">
+            <div class="contenedor-novedades">
                 <h2>¿Querés las últimas novedades?</h2>
                 <button class="escuchar">escuchá los episodios</button>
             </div>
@@ -90,9 +131,20 @@
 
     <footer>
         <div class="footer">
-            <p class="copyright">Copyright 2019 Hello blue pale dot</p>
-            <!--iconos redes sociales-->
+            <div class="copyright">
+                <p class="copyright"> © 2019 Hello blue pale dot</p>
+            </div>
+            <div class="socials">
+                <i class="fa fa-spotify" aria-hidden="false"></i>
+                <i class="fa fa-instagram" aria-hidden="false"></i>
+                <i class="fa fa-twitter" aria-hidden="false"></i>
+                <i class="fa fa-facebook-official" aria-hidden="false"></i>
+                <i class="fa fa-telegram" aria-hidden="false"></i>
+            </div>
         </div>
     </footer>
+
+    <script src="https://use.fontawesome.com/ac915394e9.js"></script>
+
 </body>
 </html>
