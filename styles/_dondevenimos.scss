@@ -85,23 +85,25 @@
             padding-left: 5%;
         }
 
-        .temas {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+        .temas-topicos {
 
-            img {
-                padding: 5% 33% 5% 33%;
-            }
+            padding-top: 5%;
 
-            .epigrafe {
-                font-family: IBM Plex Sans;
-                font-weight: 600;
-                font-size: 1.4em;
-                color: #060A24;
-                letter-spacing: 0;
-                text-align: center;
-            }
+            .temas {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 5%;
+
+                .epigrafe {
+                    font-family: IBM Plex Sans;
+                    font-weight: 600;
+                    font-size: 1.4em;
+                    color: #060A24;
+                    letter-spacing: 0;
+                    text-align: center;
+                }
+        }
 
         }
 

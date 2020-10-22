@@ -23,10 +23,22 @@
         justify-content: space-between;
         // align-items: center;
 
+        a {
+            color: black;
         i {
             align-self: center;
             size: 0.875em;
+            
+
+            &:hover {
+                color: #00F3BB;
+            }
+
+            &:active {
+                color: #060A24;
+            }
         }
+    }
     }
     
 }

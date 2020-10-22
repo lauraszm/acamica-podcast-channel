@@ -27,13 +27,20 @@ header .header {
         max-height: 224px;
         line-height: 5vh;
         padding: 0.5em;
-        background: #0000EC;
-        font-family: IBM Plex Mono;
-        color: #FFFFFF;
-        text-transform: uppercase;
-        font-size: 1rem;
-        font-weight: 100;
-        align-self: baseline; }
+        background: #0000EC; }
+        header .header .menu ul li a {
+          color: #FFFFFF;
+          font-family: IBM Plex Mono;
+          text-transform: uppercase;
+          font-size: 1rem;
+          font-weight: 100;
+          align-self: baseline; }
+        header .header .menu ul li a:link {
+          text-decoration: none;
+          color: inherit; }
+        header .header .menu ul li a:active {
+          text-decoration: none;
+          color: inherit; }
     header .header .menu input {
       display: none; }
     header .header .menu .open {
@@ -67,20 +74,23 @@ header .header {
         header .header .menu ul li {
           display: inline-block;
           list-style: none;
-          font-size: 1rem;
-          font-family: IBM Plex Mono;
-          color: #060A24;
-          letter-spacing: 0;
-          line-height: 28px;
           background-color: #FFFFFF;
-          font-weight: 500; }
-          header .header .menu ul li:hover {
-            color: #00F3BB;
-            text-decoration: line-through; }
-          header .header .menu ul li:active {
+          font-weight: 500;
+          padding: 0 1vw; }
+          header .header .menu ul li a {
+            font-size: 1rem;
+            font-family: IBM Plex Mono;
+            font-weight: 400;
             color: #060A24;
-            opacity: 56%;
-            text-decoration: line-through; } }
+            letter-spacing: 0;
+            line-height: 28px; }
+            header .header .menu ul li a:hover {
+              color: #00F3BB;
+              text-decoration: line-through; }
+            header .header .menu ul li a:active {
+              color: #060A24;
+              opacity: 56%;
+              text-decoration: line-through; } }
 .presentacion {
   box-sizing: border-box;
   display: flex;
@@ -118,15 +128,22 @@ header .header {
       height: 0.9%;
       padding: 3%;
       margin-top: 0.7vh 5vw 0.4vh 5vw;
-      font-family: IBM Plex Mono;
-      font-weight: 500;
-      text-transform: uppercase;
-      font-size: 1em;
-      color: #060A24;
-      letter-spacing: 0;
-      text-align: center;
-      line-height: 22px;
       align-self: center; }
+      .presentacion .contenedor_pres .conoce-mas a {
+        font-family: IBM Plex Mono;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 1em;
+        color: #060A24;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 22px; }
+        .presentacion .contenedor_pres .conoce-mas a:link {
+          text-decoration: none;
+          color: inherit; }
+        .presentacion .contenedor_pres .conoce-mas a:active {
+          text-decoration: none;
+          color: inherit; }
 
 @media screen and (min-width: 768px) {
   .presentacion .contenedor_pres {
@@ -181,6 +198,7 @@ header .header {
         box-sizing: border-box;
         width: 100vw;
         height: 232px;
+        border: 0;
         margin-top: 5%; }
 
 @media screen and (min-width: 768px) {
@@ -198,7 +216,8 @@ header .header {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
-      align-content: space-around; }
+      align-content: space-evenly;
+      align-items: flex-start; }
       .episodios .episodios2 .contenedor_episodios .podcast {
         box-sizing: border-box;
         align-items: center; }
@@ -266,19 +285,20 @@ header .header {
     line-height: 42px;
     padding-top: 10%;
     padding-left: 5%; }
-  .donde-venimos .contenedor-temas .temas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    .donde-venimos .contenedor-temas .temas img {
-      padding: 5% 33% 5% 33%; }
-    .donde-venimos .contenedor-temas .temas .epigrafe {
-      font-family: IBM Plex Sans;
-      font-weight: 600;
-      font-size: 1.4em;
-      color: #060A24;
-      letter-spacing: 0;
-      text-align: center; }
+  .donde-venimos .contenedor-temas .temas-topicos {
+    padding-top: 5%; }
+    .donde-venimos .contenedor-temas .temas-topicos .temas {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5%; }
+      .donde-venimos .contenedor-temas .temas-topicos .temas .epigrafe {
+        font-family: IBM Plex Sans;
+        font-weight: 600;
+        font-size: 1.4em;
+        color: #060A24;
+        letter-spacing: 0;
+        text-align: center; }
 
 .novedades {
   display: flex;
@@ -314,17 +334,22 @@ header .header {
       height: 0.9%;
       padding: 3%;
       margin-top: 0.7vh 5vw 0.4vh 5vw;
-      font-family: IBM Plex Mono;
-      font-weight: 500;
-      text-transform: uppercase;
-      font-size: 1em;
-      color: #060A24;
-      text-align: center;
-      align-self: center;
-      line-height: 22px;
-      letter-spacing: 0; }
-      .novedades .contenedor-novedades .escuchar:hover {
-        background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); }
+      align-self: center; }
+      .novedades .contenedor-novedades .escuchar a {
+        font-family: IBM Plex Mono;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 1em;
+        color: #060A24;
+        text-align: center;
+        line-height: 22px;
+        letter-spacing: 0; }
+        .novedades .contenedor-novedades .escuchar a:link {
+          text-decoration: none;
+          color: inherit; }
+        .novedades .contenedor-novedades .escuchar a:active {
+          text-decoration: none;
+          color: inherit; }
 
 .footer {
   height: 20vh;
@@ -344,9 +369,15 @@ header .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
-    .footer .socials i {
-      align-self: center;
-      size: 0.875em; }
+    .footer .socials a {
+      color: black; }
+      .footer .socials a i {
+        align-self: center;
+        size: 0.875em; }
+        .footer .socials a i:hover {
+          color: #00F3BB; }
+        .footer .socials a i:active {
+          color: #060A24; }
 
 * {
   margin: 0;

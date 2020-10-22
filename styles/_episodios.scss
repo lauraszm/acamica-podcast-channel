@@ -36,6 +36,7 @@
                     box-sizing: border-box;
                     width: 100vw;
                     height: 232px;
+                    border: 0;
                     margin-top: 5%;
                 }
                 
@@ -65,7 +66,8 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
-                align-content: space-around;
+                align-content: space-evenly;
+                align-items: flex-start;
 
                 .podcast {
                     box-sizing: border-box;
