@@ -1,4 +1,9 @@
-header {    
+header {   
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: #ffffff;
+    
     .header {
         display: flex;
         flex-direction: row;
@@ -23,20 +28,19 @@ header {
                 display: none;
                 position: absolute;
                 width: 100%;
-                top: 10vh;
+                top: 7vh;
                 right: 0;
                 z-index: 1;
 
                 li{
                     list-style: none;
-                    max-width: 320px;
-                    max-height: 224px;
+                    max-width: 100vw;
+                    max-height: 14em;
                     line-height: 5vh;
-                    padding: 0.5em;
+                    padding: 0.7em;
                     background: #0000EC;
 
                     a {
-                       
                         color: #FFFFFF;
                         font-family: IBM Plex Mono;
                         text-transform: uppercase;
@@ -49,12 +53,12 @@ header {
                     a {
                         &:link {
                             text-decoration: none;
-                            color: inherit;
+                            color: #ffffff;
                         }
 
                         &:active {
                             text-decoration: none;
-                            color: inherit;
+                            color: #ffffff;
                         }
                        
                     }
@@ -93,7 +97,11 @@ header {
 
 @media screen and (min-width:768px){
     header {
-    
+        position: sticky;
+        top: 0;
+        z-index: 99;
+        background-color: #ffffff;
+
     .header {
         display: flex;
         flex-direction: row;
@@ -116,7 +124,6 @@ header {
             ul {
                 display: inline-block;
                 position: static;
-                // margin-right: 1em;
 
                 li {
 
