@@ -138,7 +138,8 @@ header {
       height: 0.9%;
       padding: 3%;
       margin-top: 0.7vh 5vw 0.4vh 5vw;
-      align-self: center; }
+      align-self: center;
+      text-align: center; }
       .presentacion .contenedor_pres .conoce-mas a {
         font-family: IBM Plex Mono;
         font-weight: 500;
@@ -346,7 +347,8 @@ header {
       height: 0.9%;
       padding: 3%;
       margin-top: 0.7vh 5vw 0.4vh 5vw;
-      align-self: center; }
+      align-self: center;
+      text-align: center; }
       .novedades .contenedor-novedades .escuchar a {
         font-family: IBM Plex Mono;
         font-weight: 500;
