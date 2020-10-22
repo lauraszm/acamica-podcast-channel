@@ -130,14 +130,13 @@ header {
       .presentacion .contenedor_pres .descripcion .tecnologia {
         display: none; }
     .presentacion .contenedor_pres .conoce-mas {
-      margin-top: 1em;
       background: #00F3BB;
       box-sizing: border-box;
       border: 0;
       width: 90vw;
       height: 0.9%;
       padding: 3%;
-      margin-top: 0.7vh 5vw 0.4vh 5vw;
+      margin: 1.5em 5vw 0.4vh 5vw;
       align-self: center;
       text-align: center; }
       .presentacion .contenedor_pres .conoce-mas a {
@@ -339,14 +338,13 @@ header {
       padding: 10% 5%;
       text-align: center; }
     .novedades .contenedor-novedades .escuchar {
-      margin-top: 1em;
       background: #00F3BB;
       box-sizing: border-box;
       border: 0;
       width: 90%;
       height: 0.9%;
       padding: 3%;
-      margin-top: 0.7vh 5vw 0.4vh 5vw;
+      margin: 1em 5vw 0.4vh 5vw;
       align-self: center;
       text-align: center; }
       .novedades .contenedor-novedades .escuchar a {
@@ -383,12 +381,12 @@ header {
   .footer .socials {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; }
+    justify-content: space-between; }
     .footer .socials a {
       color: black; }
       .footer .socials a i {
         align-self: center;
-        size: 0.875em; }
+        font-size: 1em; }
         .footer .socials a i:hover {
           color: #00F3BB; }
         .footer .socials a i:active {
