@@ -5,7 +5,10 @@ header {
     background-color: #ffffff;
     
     .header {
-        display: flex;
+        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
         flex-direction: row;
         justify-content: space-between;
         width: 100vw;
@@ -15,15 +18,21 @@ header {
         box-sizing: border-box;
 
         .logo {
-            display: flex;
+            display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+            display: -ms-flexbox;  /* TWEENER - IE 10 */
+            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+            display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
             width: 1.5em;
             height: 1.5em;
             align-self: baseline;
         }
 
         .menu {
-            display: flex;
-
+            display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+            display: -ms-flexbox;  /* TWEENER - IE 10 */
+            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+            display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+            
             ul{
                 display: none;
                 position: absolute;
@@ -108,7 +117,10 @@ header {
         width: 100vw;
 
         .header {
-            display: flex;
+            display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+            display: -ms-flexbox;  /* TWEENER - IE 10 */
+            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+            display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
             flex-direction: row;
             justify-content: space-between;
             padding: 0.7% 6.9%;
@@ -122,8 +134,11 @@ header {
             }
 
             .menu {
-                display: flex;
-
+                display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+                display: -ms-flexbox;  /* TWEENER - IE 10 */
+                display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+                display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+                
                 .open {
                     display: none;
                 }

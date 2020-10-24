@@ -1,13 +1,39 @@
+@mixin p-mobile {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 0.875em;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 1.375em;
+    text-align: left;
+    font-weight: 500;
+}
+
+@mixin p-desktop {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 1em;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    text-align: left;
+    font-weight: 500;
+}
+
 .presentacion {
     box-sizing: border-box;
-    display: flex;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
     flex-direction: column;
     width: 100vw;
     justify-items: flex-start;
     padding: 10% 5% 0 5%;
 
     .contenedor_pres {
-        display: flex;
+        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
         flex-direction: column;
         justify-items: flex-start;
 
@@ -26,10 +52,7 @@
         }
 
         .descripcion {
-            font-family: 'IBM Plex Mono', sans-serif;
-            font-weight: 400;
-            font-size: 0.875em;
-            color: #060A24;
+            @include p-mobile;
             margin-top: 1em;
 
             .tecnologia {
@@ -45,7 +68,7 @@
             width: 90vw;
             height: 0.9%;
             padding: 3%;
-            margin: 1.5em 5vw 0 5vw;
+            margin: 2em 5vw 1.5em 5vw;
             align-self: center;
             text-align: center;
 
@@ -95,7 +118,7 @@
             }
 
             .descripcion {
-                font-size: 1em;
+                @include p-desktop;
                 width: 50vw;
                 height: 1.2%;
                 padding-bottom: 3%;
@@ -113,6 +136,7 @@
                 padding: 1% 4%;
                 box-sizing: border-box;
                 font-size: 1.1em;
+                margin: 2em 5vw 1.5em 6vw;
 
                 &:hover {
                     background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);

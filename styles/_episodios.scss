@@ -1,9 +1,31 @@
+@mixin h2-mobile {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2.25em;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+@mixin h2-desktop {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+
 .episodios {
-    display: flex;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
     flex-direction: column;
     justify-content: center;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     transform: skew(0deg, -10deg);
+    -webkit-transform:  skew(0deg, -10deg);
+    -ms-transform: skew(0deg, -10deg);
     margin-top: 8vh;
     width: 100vw;
     height: auto;
@@ -12,22 +34,23 @@
 
     .episodios2{
         transform: skew(0deg, 10deg);
-    
+        -webkit-transform:  skew(0deg, 10deg);
+        -ms-transform: skew(0deg, 10deg);    
+        
         h2 {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-weight: 300;
-            font-size: 2.25em;
-            color: #FFFFFF;
-            letter-spacing: 0;
+            @include h2-mobile;
             line-height: 2.625em;
             padding-top: 10%;
             margin-left: 5%;
         }
 
         .contenedor_episodios {
-            display: flex;
+            display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+            display: -ms-flexbox;  /* TWEENER - IE 10 */
+            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+            display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
             flex-direction: column;
-            padding-bottom: 10%;
+            padding-bottom: 20%;
         
             .podcast {
 
@@ -54,25 +77,26 @@
         width: 100vw;
 
         .episodios2 {
-            display: flex;
+            display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+            display: -ms-flexbox;  /* TWEENER - IE 10 */
+            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+            display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
             flex-direction: column;
             box-sizing: border-box;
             transform: skew(0deg, 5deg);
 
             h2 {
-                font-family: 'IBM Plex Sans', sans-serif;
-                font-size: 3rem;
-                color: #FFFFFF;
-                letter-spacing: 0;
+                @include h2-desktop;
                 padding-left: 2.5em;
                 padding-bottom: 5vh;
                 margin: 0;
             }
 
             .contenedor_episodios {
-                display: grid;
+                display: -ms-grid; /* IE 10 */
+                display: grid; /* None yet */
                 grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-                grid-gap: 2em 3.5em;
+                grid-gap: 3.5em;
                 padding: 0;
                 align-self: center;
                 box-sizing: border-box;

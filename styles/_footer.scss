@@ -1,7 +1,8 @@
 .footer {
     height: 20vh;
-    padding-right: 14.4%;
-    padding-left: 14.4%;
+    padding-right: 14vw;
+    padding-left: 14vw;
+    padding-bottom: 10%;
     box-sizing: border-box;
 
     .copyright {  
@@ -19,24 +20,18 @@
     }
 
     .socials {
-        display: flex;
+        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
 
         a {
             color: black;
         i {
             align-self: center;
             font-size: 1em;
-            
-
-            &:hover {
-                color: #00F3BB;
-            }
-
-            &:active {
-                color: #060A24;
-            }
         }
     }
     }
@@ -45,7 +40,10 @@
 
 @media screen and (min-width:768px) {
     .footer {
-        display: flex;
+        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
         flex-direction: row;
         justify-content: space-between;
         box-sizing: border-box;
@@ -62,7 +60,10 @@
         }
 
         .socials {
-            display: flex;
+            display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+            display: -ms-flexbox;  /* TWEENER - IE 10 */
+            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+            display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
             flex-direction: row;
             justify-content: space-evenly;
             width: 16.18em;
@@ -73,6 +74,14 @@
                     font-size: 1.125em;
                     line-height: 1.75em;
                     align-self: baseline;
+
+                    &:hover {
+                        color: #00F3BB;
+                    }
+        
+                    &:active {
+                        color: #060A24;
+                    }
                 }
             }
         }

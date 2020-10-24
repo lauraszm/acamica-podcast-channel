@@ -1,6 +1,46 @@
+@mixin h2-mobile {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2.25em;
+    color: #060A24;
+    letter-spacing: 0;
+}
+
+@mixin h2-desktop {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    color: #060A24;
+    letter-spacing: 0;
+}
+
+@mixin p-mobile {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 0.875em;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 1.375em;
+    text-align: left;
+    font-weight: 500;
+}
+
+@mixin p-desktop {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 1em;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    text-align: left;
+    font-weight: 500;
+}
+
+
 .donde-venimos {
     .contenedor_donde{
-        display: flex;
+        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
         flex-direction: column;
         justify-content: center;
 
@@ -19,24 +59,14 @@
             padding: 0 5%;
             
             h2 {
-                font-family: 'IBM Plex Sans', sans-serif;
-                font-weight: 400;
-                font-size: 2.25em;
-                color: #060A24;
-                letter-spacing: 0;
+                @include h2-mobile;
                 padding-top: 10%;
                 padding-bottom: 10%;
                 padding-right: 10%;
             }
 
-             .venimos {
-                font-family: 'IBM Plex Mono', sans-serif;
-                font-size: 0.875em;
-                color: #060A24;
-                letter-spacing: 0;
-                line-height: 1.375em;
-                text-align: left;
-                font-weight: 500;
+            .venimos {
+                @include p-mobile;
                 padding-bottom: 5%;
             }
 
@@ -44,23 +74,25 @@
     }
 
     .contenedor-invitadas {
-        display: flex;
+        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
         flex-direction: column;
         justify-content: center;
 
         h2 {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-weight: 400;
-            font-size: 2.25em;
-            color: #060A24;
-            letter-spacing: 0;
+            @include h2-mobile;
             padding-top: 10%;
             padding-left: 5%;
             padding-bottom: 5%;
         }
 
         .invitadas {
-            display: flex;
+            display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+            display: -ms-flexbox;  /* TWEENER - IE 10 */
+            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+            display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
             flex-direction: column;
 
             img {
@@ -73,17 +105,16 @@
     }
     
     .contenedor-temas {
-        display: flex;
+        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
         flex-direction: column;
         justify-content: center;
         padding-bottom: 7vh;
 
         h2 {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-weight: 400;
-            font-size: 2.25em;
-            color: #060A24;
-            letter-spacing: 0;
+            @include h2-mobile;
             padding: 10% 5% 0 5%
         }
 
@@ -92,7 +123,10 @@
             padding-top: 5%;
 
             .temas {
-                display: flex;
+                display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+                display: -ms-flexbox;  /* TWEENER - IE 10 */
+                display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+                display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
                 flex-direction: column;
                 justify-content: center;
                 padding: 8%;
@@ -118,7 +152,10 @@
 
         .contenedor_donde {
             box-sizing: border-box;
-            display: flex;
+            display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+            display: -ms-flexbox;  /* TWEENER - IE 10 */
+            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+            display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
             flex-direction: row;
             justify-content: space-around;
             padding: 0 12vw;
@@ -133,7 +170,10 @@
 
             .donde {
                 padding: 10vh 0;
-                display: flex;
+                display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+                display: -ms-flexbox;  /* TWEENER - IE 10 */
+                display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+                display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
                 flex-direction: column;
                 justify-content: flex-start;
 
@@ -141,17 +181,17 @@
                     width: 29em;
                     height: auto;
                     text-align: left;
-
-                    h2 {
-                        font-size: 3em;
-                        line-height: 3.875em;
-                    }
-
-                    p {
-                        font-size: 1em;
-                        line-height: 1.5em;
-                    }
                 }
+
+                h2 {
+                    @include h2-desktop;
+                    padding: 5vh 0;
+                }
+
+                p {
+                   @include p-mobile;
+                }
+                
             }
         }
        
@@ -162,8 +202,7 @@
             padding: 0;
             
             h2 {
-                font-size: 3em;
-                line-height: 3.875em;
+                @include h2-desktop;
                 padding-left: 2.5em;
                 padding-top: 0;
                 padding-bottom: 0;
@@ -171,7 +210,8 @@
             
             .invitadas {
                 box-sizing: border-box;
-                display: grid;
+                display: -ms-grid; /* IE 10 */
+                display: grid; /* None yet */
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: repeat(2, 1fr);
 
@@ -187,24 +227,29 @@
             box-sizing: border-box;
 
             h2 {
-                font-size: 3em;
-                line-height: 3.875em;
+                @include h2-desktop;
                 padding-left: 2.5em;
                 padding-top: 0;
             }
 
             .temas-topicos {
-                display: flex;
+                display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+                display: -ms-flexbox;  /* TWEENER - IE 10 */
+                display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+                display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
                 flex-direction: row;
                 justify-content: space-around;
                 box-sizing: border-box;
-                padding: 0 9em;
+                padding: 0 8em;
 
                 .temas {
-                    display: flex;
+                    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+                    display: -ms-flexbox;  /* TWEENER - IE 10 */
+                    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+                    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
                     flex-direction: column;
                     justify-content: center;
-                    padding: 3%;
+                    padding: 2vw;
 
                     img {
                         align-self: center;
