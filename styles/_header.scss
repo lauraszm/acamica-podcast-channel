@@ -11,13 +11,13 @@ header {
         width: 100vw;
         height: 8.2%;
         padding: 1em;
-        line-height: 1em;
+        line-height: 1.5em;
         box-sizing: border-box;
 
         .logo {
             display: flex;
-            width: 1rem;
-            height: 1rem;
+            width: 1.5em;
+            height: 1.5em;
             align-self: baseline;
         }
 
@@ -71,10 +71,12 @@ header {
 
             .open{
                 display: block;
+                font-size: 1.5em;
             }
                     
             .close{
                 display: none;
+                font-size: 1.5em;
             }
                     
             input:checked ~ .open{
@@ -97,16 +99,19 @@ header {
 
 @media screen and (min-width:768px){
     header {
+        box-sizing: border-box;
         position: sticky;
         top: 0;
         z-index: 99;
         background-color: #ffffff;
+        width: 100vw;
 
     .header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 0.7% 6.9%;
+        box-sizing: border-box;
 
         .logo {
             align-self: baseline;
@@ -124,6 +129,7 @@ header {
             ul {
                 display: inline-block;
                 position: static;
+                box-sizing: border-box;
 
                 li {
 
@@ -132,6 +138,7 @@ header {
                     background-color: #FFFFFF;
                     font-weight: 500;
                     padding: 0 1vw;
+                    box-sizing: border-box;
 
                     a {
                         font-size: 1rem;
@@ -142,17 +149,17 @@ header {
                         line-height: 28px;
                     
 
-                    &:hover {
-                        color: #00F3BB;
-                        text-decoration: line-through;
-                    }
+                        &:hover {
+                            color: #00F3BB;
+                            text-decoration: line-through;
+                        }
 
-                    &:active {
-                        color: #060A24;
-                        opacity: 56%;
-                        text-decoration: line-through;
+                        &:active {
+                            color: #060A24;
+                            opacity: 56%;
+                            text-decoration: line-through;
+                        }
                     }
-                }
                 }
             }
         }

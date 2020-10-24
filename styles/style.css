@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+main {
+  display: flex;
+  flex-direction: column; }
+
 header {
   position: sticky;
   top: 0;
@@ -10,12 +18,12 @@ header {
     width: 100vw;
     height: 8.2%;
     padding: 1em;
-    line-height: 1em;
+    line-height: 1.5em;
     box-sizing: border-box; }
     header .header .logo {
       display: flex;
-      width: 1rem;
-      height: 1rem;
+      width: 1.5em;
+      height: 1.5em;
       align-self: baseline; }
     header .header .menu {
       display: flex; }
@@ -49,9 +57,11 @@ header {
       header .header .menu input {
         display: none; }
       header .header .menu .open {
-        display: block; }
+        display: block;
+        font-size: 1.5em; }
       header .header .menu .close {
-        display: none; }
+        display: none;
+        font-size: 1.5em; }
       header .header .menu input:checked ~ .open {
         display: none; }
       header .header .menu input:checked ~ ul {
@@ -61,15 +71,18 @@ header {
 
 @media screen and (min-width: 768px) {
   header {
+    box-sizing: border-box;
     position: sticky;
     top: 0;
     z-index: 99;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    width: 100vw; }
     header .header {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      padding: 0.7% 6.9%; }
+      padding: 0.7% 6.9%;
+      box-sizing: border-box; }
       header .header .logo {
         align-self: baseline;
         width: 2.25em;
@@ -80,13 +93,15 @@ header {
           display: none; }
         header .header .menu ul {
           display: inline-block;
-          position: static; }
+          position: static;
+          box-sizing: border-box; }
           header .header .menu ul li {
             display: inline-block;
             list-style: none;
             background-color: #FFFFFF;
             font-weight: 500;
-            padding: 0 1vw; }
+            padding: 0 1vw;
+            box-sizing: border-box; }
             header .header .menu ul li a {
               font-size: 1rem;
               font-family: IBM Plex Mono;
@@ -106,12 +121,12 @@ header {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  justify-items: flex-start; }
+  justify-items: flex-start;
+  padding: 10% 5% 0 5%; }
   .presentacion .contenedor_pres {
     display: flex;
     flex-direction: column;
-    justify-items: flex-start;
-    padding: 0 5%; }
+    justify-items: flex-start; }
     .presentacion .contenedor_pres h1 {
       font-family: IBM Plex Sans;
       font-size: 2.25em;
@@ -136,7 +151,7 @@ header {
       width: 90vw;
       height: 0.9%;
       padding: 3%;
-      margin: 1.5em 5vw 0.4vh 5vw;
+      margin: 1.5em 5vw 0 5vw;
       align-self: center;
       text-align: center; }
       .presentacion .contenedor_pres .conoce-mas a {
@@ -156,42 +171,46 @@ header {
           color: inherit; }
 
 @media screen and (min-width: 768px) {
-  .presentacion .contenedor_pres {
-    padding-left: 10vw;
-    padding-top: 5vh; }
-    .presentacion .contenedor_pres h1 {
-      font-size: 4em; }
-      .presentacion .contenedor_pres h1 .punto {
-        color: #0000EC; }
-    .presentacion .contenedor_pres .descripcion {
-      font-size: 1em;
-      width: 50vw;
-      height: 1.2%;
-      padding-bottom: 3%; }
-      .presentacion .contenedor_pres .descripcion .tecnologia {
-        display: inline; }
-    .presentacion .contenedor_pres .conoce-mas {
-      width: 15.7vw;
-      height: 1.4%;
-      align-self: flex-start;
-      padding: 1% 4%;
-      box-sizing: border-box;
-      font-size: 1.1em; }
-      .presentacion .contenedor_pres .conoce-mas:hover {
-        background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); } }
+  .presentacion {
+    box-sizing: border-box; }
+    .presentacion .contenedor_pres {
+      padding-top: 4vh;
+      box-sizing: border-box; }
+      .presentacion .contenedor_pres h1 {
+        font-size: 4em;
+        padding-left: 1em; }
+        .presentacion .contenedor_pres h1 .punto {
+          color: #0000EC; }
+      .presentacion .contenedor_pres .descripcion {
+        font-size: 1em;
+        width: 50vw;
+        height: 1.2%;
+        padding-bottom: 3%;
+        padding-left: 4em; }
+        .presentacion .contenedor_pres .descripcion .tecnologia {
+          display: inline; }
+      .presentacion .contenedor_pres .conoce-mas {
+        width: 14.125em;
+        height: 1.4%;
+        align-self: flex-start;
+        padding: 1% 4%;
+        box-sizing: border-box;
+        font-size: 1.1em; }
+        .presentacion .contenedor_pres .conoce-mas:hover {
+          background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); } }
 .episodios {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-  transform: skew(0deg, -8deg);
-  margin-top: 12vh;
+  transform: skew(0deg, -10deg);
+  margin-top: 8vh;
   width: 100vw;
   height: auto;
-  padding-bottom: 20%;
+  padding-bottom: 20vh;
   box-sizing: border-box; }
   .episodios .episodios2 {
-    transform: skew(0deg, 8deg); }
+    transform: skew(0deg, 10deg); }
     .episodios .episodios2 h2 {
       font-family: IBM Plex Sans;
       font-weight: 300;
@@ -211,43 +230,53 @@ header {
         width: 100vw;
         height: 14.5em;
         border: 0;
-        margin-top: 5%; }
+        margin-top: 5%;
+        padding: 0 5%; }
 
 @media screen and (min-width: 768px) {
   .episodios {
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    padding-bottom: 12%;
+    transform: skew(0deg, -5deg); }
     .episodios .episodios2 {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      box-sizing: border-box;
+      transform: skew(0deg, 5deg); }
       .episodios .episodios2 h2 {
         font-family: IBM Plex Sans;
         font-size: 3rem;
         color: #FFFFFF;
         letter-spacing: 0;
-        padding-left: 10vh; }
+        padding-left: 2.5em;
+        padding-bottom: 5vh;
+        margin: 0; }
       .episodios .episodios2 .contenedor_episodios {
         display: grid;
         grid-template: repeat(2, 1fr)/repeat(2, 1fr);
         grid-gap: 2em 3.5em;
         padding: 0;
-        align-self: center; }
+        align-self: center;
+        box-sizing: border-box; }
         .episodios .episodios2 .contenedor_episodios .podcast {
           box-sizing: border-box;
           align-items: center; }
           .episodios .episodios2 .contenedor_episodios .podcast iframe {
-            width: 40.9vw;
+            width: 40.6vw;
             height: 14.5em;
-            padding: 0; } }
+            padding: 0;
+            box-sizing: border-box;
+            margin: 0; } }
 .donde-venimos .contenedor_donde {
   display: flex;
   flex-direction: column;
   justify-content: center; }
   .donde-venimos .contenedor_donde .phone img {
     position: relative;
-    margin-top: -20%;
+    margin-top: -30%;
     z-index: 10;
     width: 100vw;
-    height: 32em; }
+    height: auto; }
   .donde-venimos .contenedor_donde .donde {
     padding: 0 5%; }
     .donde-venimos .contenedor_donde .donde h2 {
@@ -258,14 +287,15 @@ header {
       letter-spacing: 0;
       line-height: 42px;
       padding-top: 10%;
-      padding-bottom: 10%; }
+      padding-bottom: 10%;
+      padding-right: 10%; }
     .donde-venimos .contenedor_donde .donde .venimos {
       font-family: IBM Plex Mono;
       font-size: 14px;
       color: #060A24;
       letter-spacing: 0;
       line-height: 22px;
-      text-align: justify;
+      text-align: left;
       font-weight: 500;
       padding-bottom: 5%; }
 .donde-venimos .contenedor-invitadas {
@@ -280,7 +310,8 @@ header {
     letter-spacing: 0;
     line-height: 42px;
     padding-top: 10%;
-    padding-left: 5%; }
+    padding-left: 5%;
+    padding-bottom: 5%; }
   .donde-venimos .contenedor-invitadas .invitadas {
     display: flex;
     flex-direction: column; }
@@ -301,95 +332,104 @@ header {
     color: #060A24;
     letter-spacing: 0;
     line-height: 42px;
-    padding-top: 10%;
-    padding-left: 5%; }
+    padding: 10% 5% 0 5%; }
   .donde-venimos .contenedor-temas .temas-topicos {
     padding-top: 5%; }
     .donde-venimos .contenedor-temas .temas-topicos .temas {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 5%; }
+      padding: 8%; }
       .donde-venimos .contenedor-temas .temas-topicos .temas .epigrafe {
         font-family: IBM Plex Sans;
         font-weight: 600;
         font-size: 1.4em;
         color: #060A24;
         letter-spacing: 0;
-        text-align: center; }
+        text-align: center;
+        padding: 0 5%; }
 
 @media screen and (min-width: 768px) {
-  .donde-venimos .contenedor_donde {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-left: 12vw;
-    padding-right: 18vw;
+  .donde-venimos {
     box-sizing: border-box; }
-    .donde-venimos .contenedor_donde .phone img {
-      height: 41.25em;
-      width: auto; }
-    .donde-venimos .contenedor_donde .donde {
-      padding: 10vh 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start; }
-      .donde-venimos .contenedor_donde .donde .venimos {
-        width: 29em;
-        height: auto;
-        text-align: left; }
-        .donde-venimos .contenedor_donde .donde .venimos h2 {
-          font-size: 3em;
-          line-height: 3.875em; }
-        .donde-venimos .contenedor_donde .donde .venimos p {
-          font-size-adjust: 1em;
-          line-height: 1.5em; }
-  .donde-venimos .contenedor-invitadas h2 {
-    font-size: 3em;
-    line-height: 3.875em; }
-  .donde-venimos .contenedor-invitadas .invitadas {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr); }
-    .donde-venimos .contenedor-invitadas .invitadas img {
-      width: 33vw;
-      height: auto;
-      box-sizing: border-box; }
-  .donde-venimos .contenedor-temas {
-    box-sizing: border-box; }
-    .donde-venimos .contenedor-temas h2 {
-      font-size: 3em;
-      line-height: 3.875em; }
-    .donde-venimos .contenedor-temas .temas-topicos {
+    .donde-venimos .contenedor_donde {
+      box-sizing: border-box;
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
-      padding: 0 10vw;
-      box-sizing: border-box; }
-      .donde-venimos .contenedor-temas .temas-topicos .temas {
+      justify-content: space-around;
+      padding: 0 12vw; }
+      .donde-venimos .contenedor_donde .phone img {
+        height: 41.25em;
+        width: auto;
+        margin-top: -20%; }
+      .donde-venimos .contenedor_donde .donde {
+        padding: 10vh 0;
         display: flex;
         flex-direction: column;
-        justify-content: space-around; }
-        .donde-venimos .contenedor-temas .temas-topicos .temas img {
-          width: 6.5em;
-          height: 6.5em;
-          align-self: center; }
-        .donde-venimos .contenedor-temas .temas-topicos .temas .epigrafe {
-          font-size: 1.5em;
-          padding-top: 0.8em;
-          box-sizing: border-box; } }
+        justify-content: flex-start; }
+        .donde-venimos .contenedor_donde .donde .venimos {
+          width: 29em;
+          height: auto;
+          text-align: left; }
+          .donde-venimos .contenedor_donde .donde .venimos h2 {
+            font-size: 3em;
+            line-height: 3.875em; }
+          .donde-venimos .contenedor_donde .donde .venimos p {
+            font-size-adjust: 1em;
+            line-height: 1.5em; }
+    .donde-venimos .contenedor-invitadas {
+      box-sizing: border-box;
+      padding: 0; }
+      .donde-venimos .contenedor-invitadas h2 {
+        font-size: 3em;
+        line-height: 3.875em;
+        padding-left: 2.5em;
+        padding-top: 0;
+        padding-bottom: 0; }
+      .donde-venimos .contenedor-invitadas .invitadas {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr); }
+        .donde-venimos .contenedor-invitadas .invitadas img {
+          width: 33.3vw;
+          height: auto; }
+    .donde-venimos .contenedor-temas {
+      box-sizing: border-box; }
+      .donde-venimos .contenedor-temas h2 {
+        font-size: 3em;
+        line-height: 3.875em;
+        padding-left: 2.5em;
+        padding-top: 0; }
+      .donde-venimos .contenedor-temas .temas-topicos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        box-sizing: border-box;
+        padding: 0 9em; }
+        .donde-venimos .contenedor-temas .temas-topicos .temas {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0; }
+          .donde-venimos .contenedor-temas .temas-topicos .temas img {
+            align-self: center; }
+          .donde-venimos .contenedor-temas .temas-topicos .temas .epigrafe {
+            font-size: 1.5em;
+            padding-top: 0.8em;
+            box-sizing: border-box;
+            align-self: center; } }
 .novedades {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
   width: 100vw;
   height: auto;
   padding-top: 5vh;
-  padding-bottom: 20%;
+  padding-bottom: 30%;
   box-sizing: border-box; }
   .novedades .contenedor-novedades {
     display: flex;
@@ -402,7 +442,7 @@ header {
       color: #FFFFFF;
       letter-spacing: 0;
       line-height: 42px;
-      padding: 10% 5%;
+      padding: 10%;
       text-align: center; }
     .novedades .contenedor-novedades .escuchar {
       background: #00F3BB;
@@ -437,7 +477,7 @@ header {
     justify-content: center;
     clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
     box-sizing: border-box;
-    padding: 25vh 0; }
+    padding: 15vh 0; }
     .novedades .contenedor-novedades h2 {
       font-size: 3em;
       line-height: 4em;
@@ -469,7 +509,7 @@ header {
   .footer .socials {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-around; }
     .footer .socials a {
       color: black; }
       .footer .socials a i {
@@ -486,17 +526,22 @@ header {
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 1em 2em; }
+    padding: 1em 4em;
+    height: auto;
+    width: 100vw; }
     .footer .copyright p {
       font-size: 1em;
       justify-self: baseline;
-      line-height: 1.75em; } }
-* {
-  margin: 0;
-  padding: 0; }
-
-main {
-  display: flex;
-  flex-direction: column; }
+      line-height: 1.75em; }
+    .footer .socials {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 16.18em;
+      align-items: center; }
+      .footer .socials a i {
+        font-size: 1.125em;
+        line-height: 1.75em;
+        align-self: baseline; } }
 
 /*# sourceMappingURL=style.css.map */

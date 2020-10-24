@@ -21,7 +21,7 @@
     .socials {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
 
         a {
             color: black;
@@ -49,13 +49,32 @@
         flex-direction: row;
         justify-content: space-between;
         box-sizing: border-box;
-        padding: 1em 2em;
+        padding: 1em 4em;
+        height: auto;
+        width: 100vw;
 
         .copyright {
+            // padding-left: 3em;
             p {
                 font-size: 1em;
                 justify-self: baseline;
                 line-height: 1.75em;
+            }
+        }
+
+        .socials {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 16.18em;
+            align-items: center;
+
+            a {
+                i {
+                    font-size: 1.125em;
+                    line-height: 1.75em;
+                    align-self: baseline;
+                }
             }
         }
 

@@ -8,10 +8,10 @@
 
             img {
                 position: relative;
-                margin-top: -20%;
+                margin-top: -30%;
                 z-index: 10;
                 width: 100vw;
-                height: 32em;
+                height: auto;
             }
         }
 
@@ -27,6 +27,7 @@
                 line-height: 42px;
                 padding-top: 10%;
                 padding-bottom: 10%;
+                padding-right: 10%;
             }
 
              .venimos {
@@ -35,7 +36,7 @@
                 color: #060A24;
                 letter-spacing: 0;
                 line-height: 22px;
-                text-align: justify;
+                text-align: left;
                 font-weight: 500;
                 padding-bottom: 5%;
             }
@@ -57,6 +58,7 @@
             line-height: 42px;
             padding-top: 10%;
             padding-left: 5%;
+            padding-bottom: 5%;
         }
 
         .invitadas {
@@ -85,8 +87,7 @@
             color: #060A24;
             letter-spacing: 0;
             line-height: 42px;
-            padding-top: 10%;
-            padding-left: 5%;
+            padding: 10% 5% 0 5%
         }
 
         .temas-topicos {
@@ -97,7 +98,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                padding: 5%;
+                padding: 8%;
 
                 .epigrafe {
                     font-family: IBM Plex Sans;
@@ -106,6 +107,7 @@
                     color: #060A24;
                     letter-spacing: 0;
                     text-align: center;
+                    padding: 0 5%;
                 }
         }
 
@@ -116,18 +118,20 @@
 
 @media screen and (min-width: 768px) {
     .donde-venimos {
+        box-sizing: border-box;
+
         .contenedor_donde {
+            box-sizing: border-box;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            padding-left: 12vw;
-            padding-right: 18vw;
-            box-sizing: border-box;
+            padding: 0 12vw;
 
             .phone {
                 img {
                     height: 41.25em;
                     width: auto;
+                    margin-top: -20%;
                 }
             }
 
@@ -158,26 +162,26 @@
     
 
         .contenedor-invitadas {
+            box-sizing: border-box;
+            padding: 0;
             
             h2 {
                 font-size: 3em;
                 line-height: 3.875em;
+                padding-left: 2.5em;
+                padding-top: 0;
+                padding-bottom: 0;
             }       
             
             .invitadas {
                 box-sizing: border-box;
-                // display: flex;
-                // flex-direction: row;
-                // flex-wrap: wrap;
-
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: repeat(2, 1fr);
 
                 img {
-                    width: 33vw;
+                    width: 33.3vw;
                     height: auto;
-                    box-sizing: border-box;
                 }
 
             }
@@ -185,26 +189,32 @@
 
         .contenedor-temas {
             box-sizing: border-box;
+
             h2 {
                 font-size: 3em;
                 line-height: 3.875em;
+                padding-left: 2.5em;
+                padding-top: 0;
             }
 
             .temas-topicos {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-evenly;
-                padding: 0 10vw;
+                justify-content: space-around;
                 box-sizing: border-box;
+                padding: 0 9em;
 
                 .temas {
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-around;
+                    justify-content: center;
+                    padding: 0;
+                    // width: 18.1vw;
+                    // height: auto;
 
                     img {
-                        width: 6.5em;
-                        height: 6.5em;
+                        // width: 6.5em;
+                        // height: 6.5em;
                         align-self: center;
                     }
 
@@ -213,6 +223,7 @@
                         // line-height: 2em;
                         padding-top: 0.8em;
                         box-sizing: border-box;
+                        align-self: center;
                     }
                 }
             }
