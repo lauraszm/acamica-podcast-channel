@@ -174,7 +174,7 @@ header {
       width: 15.7vw;
       height: 1.4%;
       align-self: flex-start;
-      padding: 1% 4.1%;
+      padding: 1% 4%;
       box-sizing: border-box;
       font-size: 1.1em; }
       .presentacion .contenedor_pres .conoce-mas:hover {
@@ -214,28 +214,30 @@ header {
         margin-top: 5%; }
 
 @media screen and (min-width: 768px) {
-  .episodios .episodios2 {
-    display: flex;
-    flex-direction: column; }
-    .episodios .episodios2 h2 {
-      font-family: IBM Plex Sans;
-      font-size: 3rem;
-      color: #FFFFFF;
-      letter-spacing: 0;
-      padding-left: 10vh; }
-    .episodios .episodios2 .contenedor_episodios {
+  .episodios {
+    box-sizing: border-box; }
+    .episodios .episodios2 {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-content: space-evenly;
-      align-items: flex-start; }
-      .episodios .episodios2 .contenedor_episodios .podcast {
-        box-sizing: border-box;
-        align-items: center; }
-        .episodios .episodios2 .contenedor_episodios .podcast iframe {
-          width: 40.9vw;
-          height: 60vh; } }
+      flex-direction: column; }
+      .episodios .episodios2 h2 {
+        font-family: IBM Plex Sans;
+        font-size: 3rem;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        padding-left: 10vh; }
+      .episodios .episodios2 .contenedor_episodios {
+        display: grid;
+        grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+        grid-gap: 2em 3.5em;
+        padding: 0;
+        align-self: center; }
+        .episodios .episodios2 .contenedor_episodios .podcast {
+          box-sizing: border-box;
+          align-items: center; }
+          .episodios .episodios2 .contenedor_episodios .podcast iframe {
+            width: 40.9vw;
+            height: 14.5em;
+            padding: 0; } }
 .donde-venimos .contenedor_donde {
   display: flex;
   flex-direction: column;
@@ -312,6 +314,32 @@ header {
         letter-spacing: 0;
         text-align: center; }
 
+@media screen and (min-width: 768px) {
+  .donde-venimos .contenedor_donde {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 12vw;
+    padding-right: 18vw;
+    box-sizing: border-box; }
+    .donde-venimos .contenedor_donde .phone img {
+      height: 41.25em;
+      width: auto; }
+    .donde-venimos .contenedor_donde .donde {
+      padding: 10vh 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; }
+      .donde-venimos .contenedor_donde .donde .venimos {
+        width: 29em;
+        height: auto;
+        text-align: left; }
+        .donde-venimos .contenedor_donde .donde .venimos h2 {
+          font-size: 3em;
+          line-height: 3.875em; }
+        .donde-venimos .contenedor_donde .donde .venimos p {
+          font-size-adjust: 1em;
+          line-height: 1.5em; } }
 .novedades {
   display: flex;
   flex-direction: column;

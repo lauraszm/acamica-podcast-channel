@@ -109,3 +109,49 @@
 
     }    
 }
+
+@media screen and (min-width: 768px) {
+    .donde-venimos {
+        .contenedor_donde {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-left: 12vw;
+            padding-right: 18vw;
+            box-sizing: border-box;
+
+            .phone {
+                img {
+                    height: 41.25em;
+                    width: auto;
+                }
+            }
+
+            .donde {
+                padding: 10vh 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+                .venimos {
+                    width: 29em;
+                    height: auto;
+                    text-align: left;
+
+                    h2 {
+                        font-size: 3em;
+                        line-height: 3.875em;
+                    }
+
+                    p {
+                        font-size-adjust: 1em;
+                        line-height: 1.5em;
+                    }
+                }
+            }
+        }
+       
+    }
+
+    
+}
