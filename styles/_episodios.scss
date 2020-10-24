@@ -14,12 +14,12 @@
         transform: skew(0deg, 10deg);
     
         h2 {
-            font-family: IBM Plex Sans;
+            font-family: 'IBM Plex Sans', sans-serif;
             font-weight: 300;
-            font-size: 36px;
+            font-size: 2.25em;
             color: #FFFFFF;
             letter-spacing: 0;
-            line-height: 42px;
+            line-height: 2.625em;
             padding-top: 10%;
             margin-left: 5%;
         }
@@ -51,6 +51,7 @@
         box-sizing: border-box;
         padding-bottom: 12%;
         transform: skew(0deg, -5deg);
+        width: 100vw;
 
         .episodios2 {
             display: flex;
@@ -59,7 +60,7 @@
             transform: skew(0deg, 5deg);
 
             h2 {
-                font-family: IBM Plex Sans;
+                font-family: 'IBM Plex Sans', sans-serif;
                 font-size: 3rem;
                 color: #FFFFFF;
                 letter-spacing: 0;

@@ -30,6 +30,7 @@ header {
                 width: 100%;
                 top: 7vh;
                 right: 0;
+                top: 10vh;
                 z-index: 1;
 
                 li{
@@ -42,9 +43,9 @@ header {
 
                     a {
                         color: #FFFFFF;
-                        font-family: IBM Plex Mono;
+                        font-family: 'IBM Plex Mono', sans-serif;
                         text-transform: uppercase;
-                        font-size: 1rem;
+                        font-size: 1em;
                         font-weight: 100;
                         align-self: baseline;
                     }
@@ -106,63 +107,65 @@ header {
         background-color: #ffffff;
         width: 100vw;
 
-    .header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0.7% 6.9%;
-        box-sizing: border-box;
-
-        .logo {
-            align-self: baseline;
-            width: 2.25em;
-            height: 2.25em;
-        }
-
-        .menu {
+        .header {
             display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0.7% 6.9%;
+            box-sizing: border-box;
+            align-items: center;
 
-            .open {
-                display: none;
+            .logo {
+                align-self: baseline;
+                width: 2.25em;
+                height: 2.25em;
             }
 
-            ul {
-                display: inline-block;
-                position: static;
-                box-sizing: border-box;
+            .menu {
+                display: flex;
 
-                li {
+                .open {
+                    display: none;
+                }
 
+                ul {
                     display: inline-block;
-                    list-style: none;
-                    background-color: #FFFFFF;
-                    font-weight: 500;
-                    padding: 0 1vw;
+                    position: static;
                     box-sizing: border-box;
 
-                    a {
-                        font-size: 1rem;
-                        font-family: IBM Plex Mono;
-                        font-weight: 400;
-                        color: #060A24;
-                        letter-spacing: 0;
-                        line-height: 28px;
-                    
+                    li {
 
-                        &:hover {
-                            color: #00F3BB;
-                            text-decoration: line-through;
-                        }
+                        display: inline-block;
+                        list-style: none;
+                        background-color: #FFFFFF;
+                        font-weight: 500;
+                        padding: 0 1vw;
+                        box-sizing: border-box;
 
-                        &:active {
+                        a {
+                            font-size: 1rem;
+                            font-family: 'IBM Plex Mono', sans-serif;
+                            font-weight: 400;
                             color: #060A24;
-                            opacity: 56%;
-                            text-decoration: line-through;
+                            letter-spacing: 0;
+                            line-height: 1.75em;
+                        
+
+                            &:hover {
+                                color: #00F3BB;
+                                text-decoration: line-through;
+                                font-weight: 500;
+                            }
+
+                            &:active {
+                                color: #060A24;
+                                opacity: 56%;
+                                text-decoration: line-through;
+                            }
                         }
                     }
                 }
             }
         }
     }
-}
 }

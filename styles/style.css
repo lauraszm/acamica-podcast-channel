@@ -33,6 +33,7 @@ header {
         width: 100%;
         top: 7vh;
         right: 0;
+        top: 10vh;
         z-index: 1; }
         header .header .menu ul li {
           list-style: none;
@@ -43,9 +44,9 @@ header {
           background: #0000EC; }
           header .header .menu ul li a {
             color: #FFFFFF;
-            font-family: IBM Plex Mono;
+            font-family: 'IBM Plex Mono', sans-serif;
             text-transform: uppercase;
-            font-size: 1rem;
+            font-size: 1em;
             font-weight: 100;
             align-self: baseline; }
           header .header .menu ul li a:link {
@@ -82,7 +83,8 @@ header {
       flex-direction: row;
       justify-content: space-between;
       padding: 0.7% 6.9%;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      align-items: center; }
       header .header .logo {
         align-self: baseline;
         width: 2.25em;
@@ -104,14 +106,15 @@ header {
             box-sizing: border-box; }
             header .header .menu ul li a {
               font-size: 1rem;
-              font-family: IBM Plex Mono;
+              font-family: 'IBM Plex Mono', sans-serif;
               font-weight: 400;
               color: #060A24;
               letter-spacing: 0;
-              line-height: 28px; }
+              line-height: 1.75em; }
               header .header .menu ul li a:hover {
                 color: #00F3BB;
-                text-decoration: line-through; }
+                text-decoration: line-through;
+                font-weight: 500; }
               header .header .menu ul li a:active {
                 color: #060A24;
                 opacity: 56%;
@@ -128,7 +131,7 @@ header {
     flex-direction: column;
     justify-items: flex-start; }
     .presentacion .contenedor_pres h1 {
-      font-family: IBM Plex Sans;
+      font-family: 'IBM Plex Sans', sans-serif;
       font-size: 2.25em;
       color: #060A24;
       color: #060A24;
@@ -137,7 +140,7 @@ header {
       .presentacion .contenedor_pres h1 .tachado {
         text-decoration: line-through; }
     .presentacion .contenedor_pres .descripcion {
-      font-family: IBM Plex Mono;
+      font-family: 'IBM Plex Mono', sans-serif;
       font-weight: 400;
       font-size: 0.875em;
       color: #060A24;
@@ -155,14 +158,14 @@ header {
       align-self: center;
       text-align: center; }
       .presentacion .contenedor_pres .conoce-mas a {
-        font-family: IBM Plex Mono;
+        font-family: 'IBM Plex Mono', sans-serif;
         font-weight: 500;
         text-transform: uppercase;
         font-size: 1em;
         color: #060A24;
         letter-spacing: 0;
         text-align: center;
-        line-height: 22px; }
+        line-height: 1.375em; }
         .presentacion .contenedor_pres .conoce-mas a:link {
           text-decoration: none;
           color: inherit; }
@@ -172,7 +175,8 @@ header {
 
 @media screen and (min-width: 768px) {
   .presentacion {
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    width: 100vw; }
     .presentacion .contenedor_pres {
       padding-top: 4vh;
       box-sizing: border-box; }
@@ -212,12 +216,12 @@ header {
   .episodios .episodios2 {
     transform: skew(0deg, 10deg); }
     .episodios .episodios2 h2 {
-      font-family: IBM Plex Sans;
+      font-family: 'IBM Plex Sans', sans-serif;
       font-weight: 300;
-      font-size: 36px;
+      font-size: 2.25em;
       color: #FFFFFF;
       letter-spacing: 0;
-      line-height: 42px;
+      line-height: 2.625em;
       padding-top: 10%;
       margin-left: 5%; }
     .episodios .episodios2 .contenedor_episodios {
@@ -237,14 +241,15 @@ header {
   .episodios {
     box-sizing: border-box;
     padding-bottom: 12%;
-    transform: skew(0deg, -5deg); }
+    transform: skew(0deg, -5deg);
+    width: 100vw; }
     .episodios .episodios2 {
       display: flex;
       flex-direction: column;
       box-sizing: border-box;
       transform: skew(0deg, 5deg); }
       .episodios .episodios2 h2 {
-        font-family: IBM Plex Sans;
+        font-family: 'IBM Plex Sans', sans-serif;
         font-size: 3rem;
         color: #FFFFFF;
         letter-spacing: 0;
@@ -280,21 +285,20 @@ header {
   .donde-venimos .contenedor_donde .donde {
     padding: 0 5%; }
     .donde-venimos .contenedor_donde .donde h2 {
-      font-family: IBM Plex Sans;
+      font-family: 'IBM Plex Sans', sans-serif;
       font-weight: 400;
-      font-size: 36px;
+      font-size: 2.25em;
       color: #060A24;
       letter-spacing: 0;
-      line-height: 42px;
       padding-top: 10%;
       padding-bottom: 10%;
       padding-right: 10%; }
     .donde-venimos .contenedor_donde .donde .venimos {
-      font-family: IBM Plex Mono;
-      font-size: 14px;
+      font-family: 'IBM Plex Mono', sans-serif;
+      font-size: 0.875em;
       color: #060A24;
       letter-spacing: 0;
-      line-height: 22px;
+      line-height: 1.375em;
       text-align: left;
       font-weight: 500;
       padding-bottom: 5%; }
@@ -303,12 +307,11 @@ header {
   flex-direction: column;
   justify-content: center; }
   .donde-venimos .contenedor-invitadas h2 {
-    font-family: IBM Plex Sans;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 2.25em;
     color: #060A24;
     letter-spacing: 0;
-    line-height: 42px;
     padding-top: 10%;
     padding-left: 5%;
     padding-bottom: 5%; }
@@ -326,12 +329,11 @@ header {
   justify-content: center;
   padding-bottom: 7vh; }
   .donde-venimos .contenedor-temas h2 {
-    font-family: IBM Plex Sans;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 2.25em;
     color: #060A24;
     letter-spacing: 0;
-    line-height: 42px;
     padding: 10% 5% 0 5%; }
   .donde-venimos .contenedor-temas .temas-topicos {
     padding-top: 5%; }
@@ -341,7 +343,7 @@ header {
       justify-content: center;
       padding: 8%; }
       .donde-venimos .contenedor-temas .temas-topicos .temas .epigrafe {
-        font-family: IBM Plex Sans;
+        font-family: 'IBM Plex Sans', sans-serif;
         font-weight: 600;
         font-size: 1.4em;
         color: #060A24;
@@ -351,7 +353,8 @@ header {
 
 @media screen and (min-width: 768px) {
   .donde-venimos {
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    width: 100vw; }
     .donde-venimos .contenedor_donde {
       box-sizing: border-box;
       display: flex;
@@ -375,7 +378,7 @@ header {
             font-size: 3em;
             line-height: 3.875em; }
           .donde-venimos .contenedor_donde .donde .venimos p {
-            font-size-adjust: 1em;
+            font-size: 1em;
             line-height: 1.5em; }
     .donde-venimos .contenedor-invitadas {
       box-sizing: border-box;
@@ -411,7 +414,7 @@ header {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          padding: 0; }
+          padding: 3%; }
           .donde-venimos .contenedor-temas .temas-topicos .temas img {
             align-self: center; }
           .donde-venimos .contenedor-temas .temas-topicos .temas .epigrafe {
@@ -436,12 +439,11 @@ header {
     flex-direction: column;
     justify-content: center; }
     .novedades .contenedor-novedades h2 {
-      font-family: IBM Plex Sans;
+      font-family: 'IBM Plex Sans', sans-serif;
       font-weight: 300;
-      font-size: 36px;
+      font-size: 2.25em;
       color: #FFFFFF;
       letter-spacing: 0;
-      line-height: 42px;
       padding: 10%;
       text-align: center; }
     .novedades .contenedor-novedades .escuchar {
@@ -455,13 +457,13 @@ header {
       align-self: center;
       text-align: center; }
       .novedades .contenedor-novedades .escuchar a {
-        font-family: IBM Plex Mono;
-        font-weight: 500;
+        font-family: 'IBM Plex Mono', sans-serif;
+        font-weight: 400;
         text-transform: uppercase;
         font-size: 1em;
         color: #060A24;
         text-align: center;
-        line-height: 22px;
+        line-height: 2.25em;
         letter-spacing: 0; }
         .novedades .contenedor-novedades .escuchar a:link {
           text-decoration: none;
@@ -477,7 +479,8 @@ header {
     justify-content: center;
     clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
     box-sizing: border-box;
-    padding: 15vh 0; }
+    padding: 15vh 0;
+    width: 100vw; }
     .novedades .contenedor-novedades h2 {
       font-size: 3em;
       line-height: 4em;
@@ -498,7 +501,7 @@ header {
   box-sizing: border-box; }
   .footer .copyright p {
     box-sizing: border-box;
-    font-family: IBM Plex Mono;
+    font-family: 'IBM Plex Mono', sans-serif;
     font-size: 0.875em;
     color: #060A24;
     letter-spacing: 0;

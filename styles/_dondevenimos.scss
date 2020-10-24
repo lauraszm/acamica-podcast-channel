@@ -19,23 +19,22 @@
             padding: 0 5%;
             
             h2 {
-                font-family: IBM Plex Sans;
+                font-family: 'IBM Plex Sans', sans-serif;
                 font-weight: 400;
-                font-size: 36px;
+                font-size: 2.25em;
                 color: #060A24;
                 letter-spacing: 0;
-                line-height: 42px;
                 padding-top: 10%;
                 padding-bottom: 10%;
                 padding-right: 10%;
             }
 
              .venimos {
-                font-family: IBM Plex Mono;
-                font-size: 14px;
+                font-family: 'IBM Plex Mono', sans-serif;
+                font-size: 0.875em;
                 color: #060A24;
                 letter-spacing: 0;
-                line-height: 22px;
+                line-height: 1.375em;
                 text-align: left;
                 font-weight: 500;
                 padding-bottom: 5%;
@@ -50,12 +49,11 @@
         justify-content: center;
 
         h2 {
-            font-family: IBM Plex Sans;
+            font-family: 'IBM Plex Sans', sans-serif;
             font-weight: 400;
-            font-size: 36px;
+            font-size: 2.25em;
             color: #060A24;
             letter-spacing: 0;
-            line-height: 42px;
             padding-top: 10%;
             padding-left: 5%;
             padding-bottom: 5%;
@@ -81,12 +79,11 @@
         padding-bottom: 7vh;
 
         h2 {
-            font-family: IBM Plex Sans;
+            font-family: 'IBM Plex Sans', sans-serif;
             font-weight: 400;
-            font-size: 36px;
+            font-size: 2.25em;
             color: #060A24;
             letter-spacing: 0;
-            line-height: 42px;
             padding: 10% 5% 0 5%
         }
 
@@ -101,7 +98,7 @@
                 padding: 8%;
 
                 .epigrafe {
-                    font-family: IBM Plex Sans;
+                    font-family: 'IBM Plex Sans', sans-serif;
                     font-weight: 600;
                     font-size: 1.4em;
                     color: #060A24;
@@ -109,16 +106,15 @@
                     text-align: center;
                     padding: 0 5%;
                 }
+            }
         }
-
-        }
-
     }    
 }
 
 @media screen and (min-width: 768px) {
     .donde-venimos {
         box-sizing: border-box;
+        width: 100vw;
 
         .contenedor_donde {
             box-sizing: border-box;
@@ -152,7 +148,7 @@
                     }
 
                     p {
-                        font-size-adjust: 1em;
+                        font-size: 1em;
                         line-height: 1.5em;
                     }
                 }
@@ -208,27 +204,20 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    padding: 0;
-                    // width: 18.1vw;
-                    // height: auto;
+                    padding: 3%;
 
                     img {
-                        // width: 6.5em;
-                        // height: 6.5em;
                         align-self: center;
                     }
 
                     .epigrafe {
                         font-size: 1.5em;
-                        // line-height: 2em;
                         padding-top: 0.8em;
                         box-sizing: border-box;
                         align-self: center;
                     }
                 }
             }
-        }
-
-        
+        }        
     }   
 }

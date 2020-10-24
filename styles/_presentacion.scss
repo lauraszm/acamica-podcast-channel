@@ -13,7 +13,7 @@
 
 
         h1 {
-            font-family: IBM Plex Sans;
+            font-family: 'IBM Plex Sans', sans-serif;
             font-size: 2.25em;
             color: #060A24;
             color: #060A24;
@@ -26,7 +26,7 @@
         }
 
         .descripcion {
-            font-family: IBM Plex Mono;
+            font-family: 'IBM Plex Mono', sans-serif;
             font-weight: 400;
             font-size: 0.875em;
             color: #060A24;
@@ -50,14 +50,14 @@
             text-align: center;
 
             a {
-                font-family: IBM Plex Mono;
+                font-family: 'IBM Plex Mono', sans-serif;
                 font-weight: 500;
                 text-transform: uppercase;
                 font-size: 1em;
                 color: #060A24;
                 letter-spacing: 0;
                 text-align: center;
-                line-height: 22px;
+                line-height: 1.375em;
 
                     &:link {
                         text-decoration: none;
@@ -79,6 +79,7 @@
 @media screen and (min-width:768px) {
     .presentacion {
         box-sizing: border-box;
+        width: 100vw;
 
         .contenedor_pres {
             padding-top: 4vh;
