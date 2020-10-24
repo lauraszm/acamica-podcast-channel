@@ -166,12 +166,16 @@
             
             .invitadas {
                 box-sizing: border-box;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
+                // display: flex;
+                // flex-direction: row;
+                // flex-wrap: wrap;
+
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
 
                 img {
-                    width: 33.3vw;
+                    width: 33vw;
                     height: auto;
                     box-sizing: border-box;
                 }

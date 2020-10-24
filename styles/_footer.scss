@@ -23,8 +23,6 @@
         flex-direction: row;
         justify-content: space-between;
 
-        // align-items: center;
-
         a {
             color: black;
         i {
@@ -41,6 +39,26 @@
             }
         }
     }
+    }
+    
+}
+
+@media screen and (min-width:768px) {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 1em 2em;
+
+        .copyright {
+            p {
+                font-size: 1em;
+                justify-self: baseline;
+                line-height: 1.75em;
+            }
+        }
+
     }
     
 }

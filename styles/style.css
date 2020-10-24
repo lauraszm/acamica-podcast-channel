@@ -349,11 +349,11 @@ header {
     line-height: 3.875em; }
   .donde-venimos .contenedor-invitadas .invitadas {
     box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
     .donde-venimos .contenedor-invitadas .invitadas img {
-      width: 33.3vw;
+      width: 33vw;
       height: auto;
       box-sizing: border-box; }
   .donde-venimos .contenedor-temas {
@@ -480,6 +480,17 @@ header {
         .footer .socials a i:active {
           color: #060A24; }
 
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 1em 2em; }
+    .footer .copyright p {
+      font-size: 1em;
+      justify-self: baseline;
+      line-height: 1.75em; } }
 * {
   margin: 0;
   padding: 0; }
