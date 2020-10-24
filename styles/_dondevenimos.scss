@@ -60,10 +60,14 @@
         }
 
         .invitadas {
+            display: flex;
+            flex-direction: column;
+
             img {
-                display: block;
                 width: 100vw;
                 height: auto;
+                padding: 0;
+                margin: 0;
             }
         }
     }
@@ -151,7 +155,65 @@
             }
         }
        
-    }
-
     
+
+        .contenedor-invitadas {
+            
+            h2 {
+                font-size: 3em;
+                line-height: 3.875em;
+            }       
+            
+            .invitadas {
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                img {
+                    width: 33.3vw;
+                    height: auto;
+                    box-sizing: border-box;
+                }
+
+            }
+        }
+
+        .contenedor-temas {
+            box-sizing: border-box;
+            h2 {
+                font-size: 3em;
+                line-height: 3.875em;
+            }
+
+            .temas-topicos {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                padding: 0 10vw;
+                box-sizing: border-box;
+
+                .temas {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+                    img {
+                        width: 6.5em;
+                        height: 6.5em;
+                        align-self: center;
+                    }
+
+                    .epigrafe {
+                        font-size: 1.5em;
+                        // line-height: 2em;
+                        padding-top: 0.8em;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+
+        
+    }   
 }
