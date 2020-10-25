@@ -589,6 +589,9 @@ header {
           padding: 2vw; }
           .donde-venimos .contenedor-temas .temas-topicos .temas img {
             align-self: center; }
+            .donde-venimos .contenedor-temas .temas-topicos .temas img:hover {
+              transform: scale(1.3);
+              -webkit-transform: scale(1.3); }
           .donde-venimos .contenedor-temas .temas-topicos .temas .epigrafe {
             font-size: 1.5em;
             padding-top: 0.8em;
@@ -711,7 +714,7 @@ header {
     display: flex;
     /* NEW, Spec - Firefox, Chrome, Opera */
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-around; }
     .footer .socials a {
       color: black; }
       .footer .socials a i {
