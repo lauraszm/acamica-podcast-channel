@@ -123,6 +123,10 @@ header {
           display: none; }
         header .header .menu .close {
           display: none; }
+        header .header .menu input:checked ~ .open {
+          display: none; }
+        header .header .menu input:checked ~ .close {
+          display: none; }
         header .header .menu ul {
           display: inline-block;
           position: static;

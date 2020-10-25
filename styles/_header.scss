@@ -148,6 +148,14 @@ header {
                     display: none;
                 }
 
+                input:checked ~ .open{
+                    display: none;
+                }
+                        
+                input:checked ~ .close{
+                    display: none;
+                }
+
                 ul {
                     display: inline-block;
                     position: static;
