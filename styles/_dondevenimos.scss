@@ -204,8 +204,8 @@
             h2 {
                 @include h2-desktop;
                 padding-left: 2.5em;
-                padding-top: 0;
-                padding-bottom: 0;
+                padding-top: 7vh;
+                padding-bottom: 7vh;
             }       
             
             .invitadas {
@@ -229,7 +229,8 @@
             h2 {
                 @include h2-desktop;
                 padding-left: 2.5em;
-                padding-top: 0;
+                padding-top: 7vh;
+                padding-bottom: 7vh;
             }
 
             .temas-topicos {
