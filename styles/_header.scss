@@ -57,13 +57,10 @@ header {
                         font-size: 1em;
                         font-weight: 100;
                         align-self: baseline;
-                    }
                     
-
-                    a {
                         &:link {
                             text-decoration: none;
-                            color: #ffffff;
+                            // color: #ffffff;
                         }
 
                         &:active {
@@ -153,7 +150,8 @@ header {
                         display: inline-block;
                         list-style: none;
                         background-color: #FFFFFF;
-                        font-weight: 500;
+                        // color: #060A24;
+                        font-weight: 400;
                         padding: 0 1vw;
                         box-sizing: border-box;
 
@@ -164,7 +162,11 @@ header {
                             color: #060A24;
                             letter-spacing: 0;
                             line-height: 1.75em;
-                        
+
+                            &:link {
+                                text-decoration: none;
+                                color: #060A24;
+                            }
 
                             &:hover {
                                 color: #00F3BB;

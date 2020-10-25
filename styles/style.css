@@ -62,12 +62,11 @@ header {
             font-size: 1em;
             font-weight: 100;
             align-self: baseline; }
-          header .header .menu ul li a:link {
-            text-decoration: none;
-            color: #ffffff; }
-          header .header .menu ul li a:active {
-            text-decoration: none;
-            color: #ffffff; }
+            header .header .menu ul li a:link {
+              text-decoration: none; }
+            header .header .menu ul li a:active {
+              text-decoration: none;
+              color: #ffffff; }
       header .header .menu input {
         display: none; }
       header .header .menu .open {
@@ -128,7 +127,7 @@ header {
             display: inline-block;
             list-style: none;
             background-color: #FFFFFF;
-            font-weight: 500;
+            font-weight: 400;
             padding: 0 1vw;
             box-sizing: border-box; }
             header .header .menu ul li a {
@@ -138,6 +137,9 @@ header {
               color: #060A24;
               letter-spacing: 0;
               line-height: 1.75em; }
+              header .header .menu ul li a:link {
+                text-decoration: none;
+                color: #060A24; }
               header .header .menu ul li a:hover {
                 color: #00F3BB;
                 text-decoration: line-through;
