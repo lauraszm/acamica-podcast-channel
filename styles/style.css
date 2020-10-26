@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 header {
   position: sticky;
   top: 0;
@@ -63,7 +67,8 @@ header {
             font-weight: 100;
             align-self: baseline; }
             header .header .menu ul li a:link {
-              text-decoration: none; }
+              text-decoration: none;
+              /*override link format*/ }
             header .header .menu ul li a:active {
               text-decoration: none;
               color: #ffffff; }
@@ -71,12 +76,15 @@ header {
         display: none; }
       header .header .menu .open {
         display: block;
+        /*display hamburguer menu*/
         font-size: 1.5em; }
       header .header .menu .close {
         display: none;
+        /*don't display closing menu*/
         font-size: 1.5em; }
       header .header .menu input:checked ~ .open {
-        display: none; }
+        display: none;
+        /*if open, show closing icon*/ }
       header .header .menu input:checked ~ ul {
         display: block; }
       header .header .menu input:checked ~ .close {
@@ -185,7 +193,6 @@ header {
       font-family: 'IBM Plex Sans', sans-serif;
       font-size: 2.25em;
       color: #060A24;
-      color: #060A24;
       font-weight: 400;
       width: 80%; }
       .presentacion .contenedor_pres h1 .tachado {
@@ -276,8 +283,11 @@ header {
   justify-content: center;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   transform: skew(0deg, -10deg);
+  /* NEW, Spec - Firefox, Chrome, Opera */
   -webkit-transform: skew(0deg, -10deg);
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   -ms-transform: skew(0deg, -10deg);
+  /* TWEENER - IE 10 */
   margin-top: 8vh;
   width: 100vw;
   height: auto;
@@ -321,6 +331,8 @@ header {
     box-sizing: border-box;
     padding-bottom: 12%;
     transform: skew(0deg, -5deg);
+    -webkit-transform: skew(0deg, -5deg);
+    -ms-transform: skew(0deg, -5deg);
     width: 100vw; }
     .episodios .episodios2 {
       display: -webkit-box;
@@ -333,7 +345,9 @@ header {
       /* NEW, Spec - Firefox, Chrome, Opera */
       flex-direction: column;
       box-sizing: border-box;
-      transform: skew(0deg, 5deg); }
+      transform: skew(0deg, 5deg);
+      -webkit-transform: skew(0deg, 5deg);
+      -ms-transform: skew(0deg, 5deg); }
       .episodios .episodios2 h2 {
         font-family: 'IBM Plex Sans', sans-serif;
         font-weight: 300;
@@ -347,7 +361,6 @@ header {
         display: -ms-grid;
         /* IE 10 */
         display: grid;
-        /* None yet */
         grid-template: repeat(2, 1fr)/repeat(2, 1fr);
         grid-gap: 3.5em;
         padding: 0;
@@ -362,64 +375,11 @@ header {
             padding: 0;
             box-sizing: border-box;
             margin: 0; } }
-.donde-venimos .contenedor_donde {
-  display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-  display: -webkit-flex;
-  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;
-  /* NEW, Spec - Firefox, Chrome, Opera */
-  flex-direction: column;
-  justify-content: center; }
-  .donde-venimos .contenedor_donde .phone img {
-    position: relative;
-    margin-top: -30%;
-    z-index: 10;
-    width: 100vw;
-    height: auto; }
-  .donde-venimos .contenedor_donde .donde {
-    padding: 0 5%; }
-    .donde-venimos .contenedor_donde .donde h2 {
-      font-family: 'IBM Plex Sans', sans-serif;
-      font-weight: 400;
-      font-size: 2.25em;
-      color: #060A24;
-      letter-spacing: 0;
-      padding-top: 10%;
-      padding-bottom: 10%;
-      padding-right: 10%; }
-    .donde-venimos .contenedor_donde .donde .venimos {
-      font-family: 'IBM Plex Mono', sans-serif;
-      font-size: 0.875em;
-      color: #060A24;
-      letter-spacing: 0;
-      line-height: 1.375em;
-      text-align: left;
-      font-weight: 500;
-      padding-bottom: 5%; }
-.donde-venimos .contenedor-invitadas {
-  display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-  display: -webkit-flex;
-  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;
-  /* NEW, Spec - Firefox, Chrome, Opera */
-  flex-direction: column;
-  justify-content: center; }
-  .donde-venimos .contenedor-invitadas h2 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 400;
-    font-size: 2.25em;
-    color: #060A24;
-    letter-spacing: 0;
-    padding-top: 10%;
-    padding-left: 5%;
-    padding-bottom: 5%; }
-  .donde-venimos .contenedor-invitadas .invitadas {
+.donde-venimos {
+  /*section "de donde venimos"*/
+  /*section "invitados/as"*/
+  /*section "nuestros temas"*/ }
+  .donde-venimos .contenedor_donde {
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6, BB7 */
     display: -ms-flexbox;
@@ -428,34 +388,55 @@ header {
     /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     display: flex;
     /* NEW, Spec - Firefox, Chrome, Opera */
-    flex-direction: column; }
-    .donde-venimos .contenedor-invitadas .invitadas img {
+    flex-direction: column;
+    justify-content: center; }
+    .donde-venimos .contenedor_donde .phone img {
+      position: relative;
+      margin-top: -30%;
+      z-index: 10;
       width: 100vw;
-      height: auto;
-      padding: 0;
-      margin: 0; }
-.donde-venimos .contenedor-temas {
-  display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-  display: -webkit-flex;
-  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;
-  /* NEW, Spec - Firefox, Chrome, Opera */
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: 7vh; }
-  .donde-venimos .contenedor-temas h2 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 400;
-    font-size: 2.25em;
-    color: #060A24;
-    letter-spacing: 0;
-    padding: 10% 5% 0 5%; }
-  .donde-venimos .contenedor-temas .temas-topicos {
-    padding-top: 5%; }
-    .donde-venimos .contenedor-temas .temas-topicos .temas {
+      height: auto; }
+    .donde-venimos .contenedor_donde .donde {
+      padding: 0 5%; }
+      .donde-venimos .contenedor_donde .donde h2 {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 400;
+        font-size: 2.25em;
+        color: #060A24;
+        letter-spacing: 0;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        padding-right: 10%; }
+      .donde-venimos .contenedor_donde .donde .venimos {
+        font-family: 'IBM Plex Mono', sans-serif;
+        font-size: 0.875em;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 1.375em;
+        text-align: left;
+        font-weight: 500;
+        padding-bottom: 5%; }
+  .donde-venimos .contenedor-invitadas {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    /* NEW, Spec - Firefox, Chrome, Opera */
+    flex-direction: column;
+    justify-content: center; }
+    .donde-venimos .contenedor-invitadas h2 {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: 400;
+      font-size: 2.25em;
+      color: #060A24;
+      letter-spacing: 0;
+      padding-top: 10%;
+      padding-left: 5%;
+      padding-bottom: 5%; }
+    .donde-venimos .contenedor-invitadas .invitadas {
       display: -webkit-box;
       /* OLD - iOS 6-, Safari 3.1-6, BB7 */
       display: -ms-flexbox;
@@ -464,22 +445,61 @@ header {
       /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
       display: flex;
       /* NEW, Spec - Firefox, Chrome, Opera */
-      flex-direction: column;
-      justify-content: center;
-      padding: 8%; }
-      .donde-venimos .contenedor-temas .temas-topicos .temas .epigrafe {
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-weight: 600;
-        font-size: 1.4em;
-        color: #060A24;
-        letter-spacing: 0;
-        text-align: center;
-        padding: 0 5%; }
+      flex-direction: column; }
+      .donde-venimos .contenedor-invitadas .invitadas img {
+        width: 100vw;
+        height: auto;
+        padding: 0;
+        margin: 0; }
+  .donde-venimos .contenedor-temas {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    /* NEW, Spec - Firefox, Chrome, Opera */
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 7vh; }
+    .donde-venimos .contenedor-temas h2 {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: 400;
+      font-size: 2.25em;
+      color: #060A24;
+      letter-spacing: 0;
+      padding: 10% 5% 0 5%; }
+    .donde-venimos .contenedor-temas .temas-topicos {
+      padding-top: 5%; }
+      .donde-venimos .contenedor-temas .temas-topicos .temas {
+        display: -webkit-box;
+        /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        display: -webkit-flex;
+        /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: flex;
+        /* NEW, Spec - Firefox, Chrome, Opera */
+        flex-direction: column;
+        justify-content: center;
+        padding: 8%; }
+        .donde-venimos .contenedor-temas .temas-topicos .temas .epigrafe {
+          font-family: 'IBM Plex Sans', sans-serif;
+          font-weight: 600;
+          font-size: 1.4em;
+          color: #060A24;
+          letter-spacing: 0;
+          text-align: center;
+          padding: 0 5%; }
 
 @media screen and (min-width: 768px) {
   .donde-venimos {
     box-sizing: border-box;
-    width: 100vw; }
+    width: 100vw;
+    /*section "de donde venimos"*/
+    /*section "invitados/as"*/
+    /*section "nuestros temas"*/ }
     .donde-venimos .contenedor_donde {
       box-sizing: border-box;
       display: -webkit-box;
@@ -611,6 +631,7 @@ header {
   align-items: center;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  /*irregular shape or the background*/
   width: 100vw;
   height: auto;
   padding-top: 5vh;
@@ -640,7 +661,7 @@ header {
       background: #00F3BB;
       box-sizing: border-box;
       border: 0;
-      padding: 1em;
+      padding: 0.7em 1.2em;
       align-self: center;
       text-align: center; }
       .novedades .contenedor-novedades .escuchar a {
@@ -653,9 +674,11 @@ header {
         letter-spacing: 0; }
         .novedades .contenedor-novedades .escuchar a:link {
           text-decoration: none;
+          /*override link format*/
           color: inherit; }
         .novedades .contenedor-novedades .escuchar a:active {
           text-decoration: none;
+          /*override link format*/
           color: inherit; }
 
 @media screen and (min-width: 768px) {
@@ -671,6 +694,7 @@ header {
     flex-direction: column;
     justify-content: center;
     clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
+    /*irregular shape or the background*/
     box-sizing: border-box;
     padding: 15vh 0;
     width: 100vw; }
@@ -716,7 +740,7 @@ header {
     flex-direction: row;
     justify-content: space-around; }
     .footer .socials a {
-      color: black; }
+      color: #060A24; }
       .footer .socials a i {
         align-self: center;
         font-size: 1em; }
@@ -762,8 +786,5 @@ header {
           color: #00F3BB; }
         .footer .socials a i:active {
           color: #060A24; } }
-* {
-  margin: 0;
-  padding: 0; }
 
 /*# sourceMappingURL=style.css.map */

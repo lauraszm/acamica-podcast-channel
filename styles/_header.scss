@@ -59,8 +59,7 @@ header {
                         align-self: baseline;
                     
                         &:link {
-                            text-decoration: none;
-                            // color: #ffffff;
+                            text-decoration: none; /*override link format*/
                         }
 
                         &:active {
@@ -71,23 +70,23 @@ header {
                     }
                 }
             }
-
+            
             input {
                 display: none;
             }
 
             .open{
-                display: block;
+                display: block; /*display hamburguer menu*/
                 font-size: 1.5em;
             }
                     
             .close{
-                display: none;
+                display: none; /*don't display closing menu*/
                 font-size: 1.5em;
             }
                     
             input:checked ~ .open{
-                display: none;
+                display: none; /*if open, show closing icon*/
             }
 
             input:checked ~ ul {
@@ -166,7 +165,6 @@ header {
                         display: inline-block;
                         list-style: none;
                         background-color: #FFFFFF;
-                        // color: #060A24;
                         font-weight: 400;
                         padding: 0 1vw;
                         box-sizing: border-box;

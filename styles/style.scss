@@ -1,4 +1,8 @@
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 @import 'header';
 @import 'presentacion';
@@ -7,7 +11,3 @@
 @import 'novedades';
 @import 'footer';
 
-* {
-    margin: 0;
-    padding: 0;
-}
