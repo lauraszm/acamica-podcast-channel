@@ -587,11 +587,11 @@ header {
           flex-direction: column;
           justify-content: center;
           padding: 2vw; }
+          .donde-venimos .contenedor-temas .temas-topicos .temas:hover {
+            transform: scale(1.3);
+            -webkit-transform: scale(1.3); }
           .donde-venimos .contenedor-temas .temas-topicos .temas img {
             align-self: center; }
-            .donde-venimos .contenedor-temas .temas-topicos .temas img:hover {
-              transform: scale(1.3);
-              -webkit-transform: scale(1.3); }
           .donde-venimos .contenedor-temas .temas-topicos .temas .epigrafe {
             font-size: 1.5em;
             padding-top: 0.8em;
