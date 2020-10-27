@@ -35,12 +35,8 @@
 }
 
 .donde-venimos {
-    /*section "de donde venimos"*/
-    .contenedor_donde{
-        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-        display: -ms-flexbox;  /* TWEENER - IE 10 */
-        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-        display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    .contenedor_donde{     /*section "de donde venimos"*/
+        display: flex;
         flex-direction: column;
         justify-content: center;
 
@@ -72,12 +68,8 @@
 
         }
     }
-    /*section "invitados/as"*/
-    .contenedor-invitadas {
-        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-        display: -ms-flexbox;  /* TWEENER - IE 10 */
-        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-        display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    .contenedor-invitadas {     /*section "invitados/as"*/
+        display: flex;
         flex-direction: column;
         justify-content: center;
 
@@ -89,10 +81,7 @@
         }
 
         .invitadas {
-            display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-            display: -ms-flexbox;  /* TWEENER - IE 10 */
-            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-            display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+            display: flex;
             flex-direction: column;
 
             img {
@@ -104,12 +93,8 @@
         }
     }
     
-    /*section "nuestros temas"*/
-    .contenedor-temas {
-        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-        display: -ms-flexbox;  /* TWEENER - IE 10 */
-        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-        display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    .contenedor-temas {     /*section "nuestros temas"*/
+        display: flex;
         flex-direction: column;
         justify-content: center;
         padding-bottom: 7vh;
@@ -124,10 +109,7 @@
             padding-top: 5%;
 
             .temas {
-                display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-                display: -ms-flexbox;  /* TWEENER - IE 10 */
-                display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-                display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+                display: flex;
                 flex-direction: column;
                 justify-content: center;
                 padding: 8%;
@@ -151,13 +133,9 @@
         box-sizing: border-box;
         width: 100vw;
     
-        /*section "de donde venimos"*/
-        .contenedor_donde {
+        .contenedor_donde {         /*section "de donde venimos"*/
             box-sizing: border-box;
-            display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-            display: -ms-flexbox;  /* TWEENER - IE 10 */
-            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-            display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+            display: flex;
             flex-direction: row;
             justify-content: space-around;
             padding: 0 12vw;
@@ -172,10 +150,7 @@
 
             .donde {
                 padding: 10vh 0;
-                display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-                display: -ms-flexbox;  /* TWEENER - IE 10 */
-                display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-                display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+                display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
 
@@ -198,8 +173,7 @@
         }
        
     
-        /*section "invitados/as"*/
-        .contenedor-invitadas {
+        .contenedor-invitadas {         /*section "invitados/as"*/
             box-sizing: border-box;
             padding: 0;
             
@@ -212,8 +186,7 @@
             
             .invitadas {
                 box-sizing: border-box;
-                display: -ms-grid; /* IE 10 */
-                display: grid; /* None yet */
+                display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: repeat(2, 1fr);
 
@@ -225,8 +198,7 @@
             }
         }
         
-        /*section "nuestros temas"*/
-        .contenedor-temas {
+        .contenedor-temas {         /*section "nuestros temas"*/
             box-sizing: border-box;
 
             h2 {
@@ -237,20 +209,14 @@
             }
 
             .temas-topicos {
-                display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-                display: -ms-flexbox;  /* TWEENER - IE 10 */
-                display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-                display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+                display: flex;
                 flex-direction: row;
                 justify-content: space-around;
                 box-sizing: border-box;
                 padding: 0 8em;
 
                 .temas {
-                    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-                    display: -ms-flexbox;  /* TWEENER - IE 10 */
-                    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-                    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+                    display: flex;
                     flex-direction: column;
                     justify-content: center;
                     padding: 2vw;

@@ -5,10 +5,7 @@ header {
     background-color: #ffffff;
     
     .header {
-        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-        display: -ms-flexbox;  /* TWEENER - IE 10 */
-        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-        display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 100vw;
@@ -18,20 +15,14 @@ header {
         box-sizing: border-box;
 
         .logo {
-            display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-            display: -ms-flexbox;  /* TWEENER - IE 10 */
-            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-            display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+            display: flex;
             width: 1.5em;
             height: 1.5em;
             align-self: baseline;
         }
 
         .menu {
-            display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-            display: -ms-flexbox;  /* TWEENER - IE 10 */
-            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-            display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+            display: flex;
             
             ul{
                 display: none;
@@ -113,10 +104,7 @@ header {
         width: 100vw;
 
         .header {
-            display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-            display: -ms-flexbox;  /* TWEENER - IE 10 */
-            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-            display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+            display: flex;
             flex-direction: row;
             justify-content: space-between;
             padding: 0.7% 6.9%;
@@ -130,10 +118,7 @@ header {
             }
 
             .menu {
-                display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-                display: -ms-flexbox;  /* TWEENER - IE 10 */
-                display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-                display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+                display: flex;
                 
                 input {
                     display: none;

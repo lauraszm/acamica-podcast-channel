@@ -16,16 +16,11 @@
 
 
 .episodios {
-    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-    display: -ms-flexbox;  /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    display: flex;
     flex-direction: column;
     justify-content: center;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    transform: skew(0deg, -10deg); /* NEW, Spec - Firefox, Chrome, Opera */
-    -webkit-transform:  skew(0deg, -10deg); /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-    -ms-transform: skew(0deg, -10deg); /* TWEENER - IE 10 */
+    transform: skew(0deg, -10deg);
     margin-top: 8vh;
     width: 100vw;
     height: auto;
@@ -45,10 +40,7 @@
         }
 
         .contenedor_episodios {
-            display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-            display: -ms-flexbox;  /* TWEENER - IE 10 */
-            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-            display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+            display: flex;
             flex-direction: column;
             padding-bottom: 20%;
         
@@ -79,10 +71,7 @@
         width: 100vw;
 
         .episodios2 {
-            display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-            display: -ms-flexbox;  /* TWEENER - IE 10 */
-            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-            display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+            display: flex;
             flex-direction: column;
             box-sizing: border-box;
             transform: skew(0deg, 5deg);
@@ -97,7 +86,6 @@
             }
 
             .contenedor_episodios {
-                display: -ms-grid; /* IE 10 */
                 display: grid;
                 grid-template: repeat(2, 1fr) / repeat(2, 1fr);
                 grid-gap: 3.5em;

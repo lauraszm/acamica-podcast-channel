@@ -1,8 +1,5 @@
 .novedades {
-    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-    display: -ms-flexbox;  /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -15,10 +12,7 @@
     box-sizing: border-box;
 
     .contenedor-novedades {
-        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-        display: -ms-flexbox;  /* TWEENER - IE 10 */
-        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-        display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+        display: flex;
         flex-direction: column;
         justify-content: center;
         box-sizing: border-box;
@@ -70,10 +64,7 @@
 
 @media screen and (min-width: 768px) {
     .novedades {
-        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-        display: -ms-flexbox;  /* TWEENER - IE 10 */
-        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-        display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+        display: flex;
         flex-direction: column;
         justify-content: center;
         clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%); /*irregular shape or the background*/
