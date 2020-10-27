@@ -2,6 +2,27 @@
   margin: 0;
   padding: 0; }
 
+@-webkit-keyframes scaling {
+  From {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3); }
+  To {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes scaling {
+  From {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3); }
+  To {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -41,17 +62,19 @@ header {
         display: none;
         position: absolute;
         width: 100%;
-        top: 7vh;
+        top: 8.2vh;
         right: 0;
-        top: 10vh;
         z-index: 1; }
         header .header .menu ul li {
           list-style: none;
           max-width: 100vw;
           max-height: 14em;
-          line-height: 5vh;
+          line-height: 4vh;
           padding: 0.7em;
-          background: #0000EC; }
+          background: #0000EC;
+          border: 0;
+          margin: 0;
+          /*avoid line between li items*/ }
           header .header .menu ul li a {
             color: #FFFFFF;
             font-family: 'IBM Plex Mono', sans-serif;
@@ -70,7 +93,6 @@ header {
         display: none; }
       header .header .menu .open {
         display: block;
-        /*display hamburguer menu*/
         font-size: 1.5em; }
       header .header .menu .close {
         display: none;
@@ -80,6 +102,7 @@ header {
         display: none;
         /*if open, show closing icon*/ }
       header .header .menu input:checked ~ ul {
+        /*display hamburguer menu*/
         display: block; }
       header .header .menu input:checked ~ .close {
         display: block; }
@@ -282,8 +305,8 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-  -webkit-transform: skew(0deg, -10deg);
-          transform: skew(0deg, -10deg);
+  -webkit-transform: skew(0deg, -8deg);
+          transform: skew(0deg, -8deg);
   margin-top: 8vh;
   width: 100vw;
   height: auto;
@@ -291,9 +314,8 @@ header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   .episodios .episodios2 {
-    transform: skew(0deg, 10deg);
-    -webkit-transform: skew(0deg, 10deg);
-    -ms-transform: skew(0deg, 10deg); }
+    -webkit-transform: skew(0deg, 8deg);
+            transform: skew(0deg, 8deg); }
     .episodios .episodios2 h2 {
       font-family: 'IBM Plex Sans', sans-serif;
       font-weight: 300;
@@ -327,9 +349,8 @@ header {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding-bottom: 12%;
-    transform: skew(0deg, -5deg);
     -webkit-transform: skew(0deg, -5deg);
-    -ms-transform: skew(0deg, -5deg);
+            transform: skew(0deg, -5deg);
     width: 100vw; }
     .episodios .episodios2 {
       display: -webkit-box;
@@ -341,9 +362,8 @@ header {
               flex-direction: column;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
-      transform: skew(0deg, 5deg);
       -webkit-transform: skew(0deg, 5deg);
-      -ms-transform: skew(0deg, 5deg); }
+              transform: skew(0deg, 5deg); }
       .episodios .episodios2 h2 {
         font-family: 'IBM Plex Sans', sans-serif;
         font-weight: 300;
@@ -605,8 +625,8 @@ header {
                   justify-content: center;
           padding: 2vw; }
           .donde-venimos .contenedor-temas .temas-topicos .temas:hover {
-            transform: scale(1.3);
-            -webkit-transform: scale(1.3); }
+            -webkit-animation: scaling 1s ease-in-out 1;
+                    animation: scaling 1s ease-in-out 1; }
           .donde-venimos .contenedor-temas .temas-topicos .temas img {
             -ms-flex-item-align: center;
                 align-self: center; }

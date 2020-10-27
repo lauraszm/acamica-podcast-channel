@@ -222,8 +222,7 @@
                     padding: 2vw;
 
                     &:hover {
-                        transform: scale(1.3);
-                        -webkit-transform: scale(1.3);
+                        animation: scaling 1s ease-in-out 1;
                     }
 
                     img {
