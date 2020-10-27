@@ -217,7 +217,7 @@
 
                 .temas {
                     padding: 2vw;
-                    animation: transition all 1s all;
+                    transition: all 1s;
 
                     &:hover {
                         transform: scale(1.1);

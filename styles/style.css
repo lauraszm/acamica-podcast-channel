@@ -593,8 +593,8 @@ header {
         padding: 0 8em; }
         .donde-venimos .contenedor-temas .temas-topicos .temas {
           padding: 2vw;
-          -webkit-animation: transition all 1s all;
-                  animation: transition all 1s all; }
+          -webkit-transition: all 1s;
+          transition: all 1s; }
           .donde-venimos .contenedor-temas .temas-topicos .temas:hover {
             -webkit-transform: scale(1.1);
                     transform: scale(1.1); }
