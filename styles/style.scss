@@ -4,12 +4,6 @@
     padding: 0;
 }
 
-@keyframes scaling {
-    From {transform: scale(1);}
-    50% {transform: scale(1.3);}
-    To {transform: scale(1);}
-}
-
 @import 'header';
 @import 'presentacion';
 @import 'episodios';

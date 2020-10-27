@@ -2,27 +2,6 @@
   margin: 0;
   padding: 0; }
 
-@-webkit-keyframes scaling {
-  From {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
-  50% {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3); }
-  To {
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
-
-@keyframes scaling {
-  From {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
-  50% {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3); }
-  To {
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -613,20 +592,12 @@ header {
                 box-sizing: border-box;
         padding: 0 8em; }
         .donde-venimos .contenedor-temas .temas-topicos .temas {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          padding: 2vw; }
+          padding: 2vw;
+          -webkit-animation: transition all 1s all;
+                  animation: transition all 1s all; }
           .donde-venimos .contenedor-temas .temas-topicos .temas:hover {
-            -webkit-animation: scaling 1s ease-in-out 1;
-                    animation: scaling 1s ease-in-out 1; }
+            -webkit-transform: scale(1.1);
+                    transform: scale(1.1); }
           .donde-venimos .contenedor-temas .temas-topicos .temas img {
             -ms-flex-item-align: center;
                 align-self: center; }

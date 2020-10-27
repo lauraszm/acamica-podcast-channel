@@ -216,13 +216,11 @@
                 padding: 0 8em;
 
                 .temas {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
                     padding: 2vw;
+                    animation: transition all 1s all;
 
                     &:hover {
-                        animation: scaling 1s ease-in-out 1;
+                        transform: scale(1.1);
                     }
 
                     img {
